@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task_troubleshooting.html 
+keywords: troubleshoot, agent, connectivity, browser, discover, error, internet, connection 
+summary: Wenn bei der Verwendung von Converged Systems Advisor ein Problem auftritt, können Sie das Problem mithilfe der folgenden Informationen lösen. 
+---
+= Fehlerbehebung Bei Converged Systems Advisor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn bei der Verwendung von Converged Systems Advisor ein Problem auftritt, können Sie das Problem mithilfe der folgenden Informationen lösen.
+
+
+
+== Sie können keine Verbindung zum Agenten über einen Webbrowser herstellen
+
+Sie müssen eine Verbindung mit dem Agenten über einen Webbrowser herstellen, um die Erkennung Ihrer FlexPod-Geräte zu konfigurieren. Wenn Sie keine Verbindung über einen Webbrowser herstellen können, stellen Sie sicher, dass der Agent über eine ausgehende Internetverbindung mit csa.netapp.com verfügt. Die Agent-Anwendung kann nicht ohne eine Internetverbindung gestartet werden, was den Zugriff auf die Webschnittstelle verhindert.
+
+Wenn ein Proxyserver für den Internetzugang benötigt wird, link:task_getting_started.html#setting-up-networking-for-the-agent["Konfigurieren Sie die virtuelle Agent-Maschine für die Verwendung"].
+
+
+
+== Der Agent kann keine Geräte erkennen
+
+Wenn der Agent ein FlexPod-Gerät nicht erkennen kann, überprüfen Sie Folgendes:
+
+* Stellen Sie sicher, dass der Agent über eine offene Verbindung zu jedem FlexPod-Gerät verfügt.
++
+Um dies zu überprüfen, pingen Sie jedes Gerät vom Agenten.
+
+* Überprüfen Sie, ob ein lokales Netzwerk das Subnetz 172.17.x.x verwendet.
++
+Der Agent verwendet intern das Subnetz 172.17.x.x. Wenn ein lokales Netzwerk dasselbe Subnetz verwendet, müssen Sie das Subnetz auf dem Agenten ändern:
+
++
+.. Melden Sie sich bei der Konsole der virtuellen Maschine des Agenten an.
++
+Der Standardbenutzername ist `csa` Und das Standardpasswort lautet `netapp`. Sie sollten das Standardpasswort nach der Anmeldung ändern.
+
+.. Fügen Sie die Datei hinzu `/etc/docker/daemon.json` Mit folgendem Inhalt:
++
+ { "bip": "172.44.x.x"}
++
+Die bip-Adresse kann eine nicht widersprüchliche IP-Adresse sein. Es muss nicht im Bereich 172 liegen.
+
+.. Starten Sie die virtuelle Maschine neu.
+
+
+
+
+
+
+== Es konnte keine Verbindung zur Agent-VM über SSH hergestellt werden
+
+SSH für die Agent-VM ist standardmäßig deaktiviert.
+
+* Um SSH zu starten, melden Sie sich über die Konsole in vCenter bei der Agent-VM an und führen Sie die folgenden Befehle aus:
++
+`sudo su`
+`systemctl start ssh`
+
+* Führen Sie den folgenden Befehl aus, um zu überprüfen, ob SSH aktiviert ist:
++
+`systemctl is-enabled ssh`
+
+* Führen Sie den folgenden Befehl aus, um den Status von SSH auf der Agenten-VM zu überprüfen:
++
+`systemctl status ssh`
+
+* Führen Sie die folgenden Befehle aus, um SSH beim Neustart weiterhin zu aktivieren:
++
+`sudo su`
+`systemctl enable ssh`
+
+

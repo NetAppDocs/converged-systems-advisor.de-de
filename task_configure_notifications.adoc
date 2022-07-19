@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: task_configure_notifications.html 
+keywords: configure, Converged, Systems, Advisor, infrastructure, email, notifications, alert, portal, collection, failures, offline, agent, daily, alert, digest 
+summary: Wenn Sie eine Premiumlizenz besitzen, benachrichtigt Converged Systems Advisor Sie per E-Mail über Änderungen an Ihrer FlexPod Infrastruktur. 
+---
+= Konfigurieren Sie Benachrichtigungen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie eine Premiumlizenz besitzen, benachrichtigt Converged Systems Advisor Sie per E-Mail über Änderungen an Ihrer FlexPod Infrastruktur.
+
+.Schritte
+. Klicken Sie im Converged Systems Advisor-Portal auf das Symbol *Einstellungen* und dann auf *Warnmeldungseinstellungen*.
+. Prüfen Sie die Benachrichtigung, die Sie für jede konvergente Infrastruktur mit einer Premium-Lizenz erhalten möchten.
++
+Jede Benachrichtigung enthält folgende Informationen:
+
++
+Erfassungsfehler:: Warnungen, wenn Converged Systems Advisor keine Daten aus einer konvergenten Infrastruktur erfassen kann
+Offline-Agent:: Benachrichtigt Sie, wenn ein Converged Systems Advisor-Agent nicht online ist.
+Täglicher Alarmdigest:: Informiert Sie über fehlgeschlagene Regeln, die am Vortag aufgetreten sind.
+
+
+. Klicken Sie Auf *Speichern*.
+
+
+Converged Systems Advisor sendet nun E-Mail-Benachrichtigungen an die Benutzer, die mit der konvergenten Infrastruktur verknüpft sind.

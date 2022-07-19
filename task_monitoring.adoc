@@ -1,0 +1,196 @@
+---
+sidebar: sidebar 
+permalink: task_monitoring.html 
+keywords: reports, alerts, history, support contract, contracts, rules, fail, warning, pass, notifications, email 
+summary: Sie können Ihre konvergente Infrastruktur überwachen, indem Sie auf Warnungen reagieren, Änderungshistorie überprüfen und Berichte erstellen, die einen ganzheitlichen Überblick über die Infrastruktur ermöglichen. 
+---
+= Monitoring der konvergenten Infrastruktur
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können Ihre konvergente Infrastruktur überwachen, indem Sie auf Warnungen reagieren, Änderungshistorie überprüfen und Berichte erstellen, die einen ganzheitlichen Überblick über die Infrastruktur ermöglichen.
+
+
+
+== Überprüfen von Warnmeldungen auf fehlgeschlagene Regeln und Warnungen
+
+Converged Systems Advisor überwacht Ihre Infrastruktur kontinuierlich und generiert Warnungen und Ausfälle, um sicherzustellen, dass das System konfiguriert ist und die Best Practices eingehalten werden.
+
+.Schritte
+. Melden Sie sich bei an https://csa.netapp.com/["Converged Systems Advisor-Portal"^] Und klicken Sie auf *Regeln*.
++
+Auf der Seite Regeln wird eine Zusammenfassung aller Regeln angezeigt. Der Status für jede Regel ist entweder *Pass*, *Warnung* oder *FAIL*.
+
+. Klicken Sie in der Spalte Status auf das Filtersymbol und wählen Sie *Fail*, *Warnung* oder beides aus.
++
+image:screenshot_rules_filter.gif["Zeigt das Filtersymbol an, mit dem Sie die Tabelle filtern können, sodass nur die Regeln angezeigt werden, die bestanden, ausgefallen sind oder Warnungen einschließen."]
+
+. Prüfen Sie Details zu einzelnen Regeln, indem Sie auf den Pfeil neben der Spalte Status klicken.
++
+image:screenshot_rules_information.gif["Zeigt Details zu einer Regel an, einschließlich Beschreibung, Wirkung und Auflösung."]
+
+. Befolgen Sie die Anweisungen in der Lösung, um das Problem zu beheben.
++
+Bei Bedarf  the history for an infrastructure,Überprüfen Sie den Konfigurationsverlauf Für die Infrastruktur, die Ihnen bei der Problemlösung hilft.
+
+
+
+Der Status der Regeln, die Sie adressiert haben, sollte nach dem nächsten Erfassungszeitraum des Agenten als „Pass“ angezeigt werden.
+
+
+
+== Beseitigung fehlgeschlagener Regeln
+
+Converged Systems Advisor kann einige ausgefallene Regeln für Sie beheben, indem das zugrunde liegende Problem mit der konvergenten Infrastruktur korrigiert wird.
+
+.Über diese Aufgabe
+* Sie müssen über die Premium-Lizenz verfügen.
+* Sie müssen als Eigentümer der konvergenten Infrastruktur zugewiesen werden.
+
+
+.Schritte
+. Melden Sie sich bei an https://csa.netapp.com/["Converged Systems Advisor-Portal"^] Und klicken Sie auf *Regeln*.
++
+Auf der Seite Regeln wird eine Zusammenfassung aller Regeln angezeigt. Der Status für jede Regel ist entweder *Pass*, *Warnung* oder *FAIL*.
+
+. Wählen Sie *Filterregeln, die beseitigt werden können*.
+. Erweitern Sie die Regel, die Sie auflösen möchten.
+. Klicken Sie Auf image:wrench_icon.jpg["Zeigt das Schraubenschlüsselsymbol, mit dem Sie fehlerhafte Regeln automatisch beheben können."] In der rechten oberen Ecke der erweiterten Regel.
++
+Wenn das Symbol deaktiviert ist, liegt es entweder daran, dass der Agent offline ist, Sie keine Owner-Rechte haben oder dass Sie keine Premium-Lizenz besitzen.
+
+. Geben Sie bei Bedarf die Eingabewerte ein.
++
+Je nach fehlgeschlagener Regel sind einige Eingabewerte erforderlich, um das Problem zu lösen.
+
+. Wenn eine Datensammlung nach dem erfolgreichen Abschluss der Problembehebung durchgeführt werden soll, wählen Sie die Option *Sammeln, wenn der Korrekturjob abgeschlossen ist*.
+. Klicken Sie auf *Problembehebung ausführen*.
+. Klicken Sie Auf *Bestätigen*.
+. Um die zur Behebung fehlgeschlagener Regeln getroffenen Aktionen anzuzeigen, klicken Sie auf das Symbol *Operationen* und wählen *Korrekturmaßnahmen*.
++
+image:operations_icon.gif["Zeigt das Symbol „Vorgänge“ an, mit dem das Menü geöffnet wird, um die Aktionen zu sehen, die beseitigt wurden."]
+
+
+
+
+
+== Unterdrückung fehlgeschlagener Regeln
+
+Converged Systems Advisor ermöglicht Ihnen, Regeln zu unterdrücken, damit diese nicht im Dashboard angezeigt werden und bei Regelfehlern keine E-Mail-Benachrichtigungen mehr senden.
+
+Die Aktivierung von Telnet wird beispielsweise nicht empfohlen, aber wenn Sie es aktivieren möchten, können Sie die Regel unterdrücken.
+
+Sie müssen über die Premium-Lizenz verfügen, um Benachrichtigungen zu konfigurieren.
+
+.Schritte
+. Klicken Sie im Dashboard auf *Regeln*.
+. Finden Sie die Regeln, nach denen Sie suchen, indem Sie den Inhalt der Tabelle filtern.
+. Wählen Sie eine oder mehrere Zeilen für Regeln aus, die den Status „Warnung“ oder „Fehlschlagen“ aufweisen, und klicken Sie dann auf das Symbol „Meldungen*“.
++
+image:screenshot_rules_suppress.gif["Zeigt das Warnungssymbol über der Tabelle an, über dem Sie Regeln unterdrücken können."]
+
+. Wählen Sie eine Dauer aus und klicken Sie dann auf *Absenden*.
+
+
+
+TIP: Wenn Sie die Alarme aktivieren möchten, befolgen Sie diese Schritte, und wählen Sie *Unterdrückung beenden*.
+
+Converged Systems Advisor benachrichtigt Sie nicht mehr über die Regel für die angegebene Dauer, und die Regel wird nicht mehr im Dashboard angezeigt.
+
+
+
+== Unterdrückte Regeln werden angezeigt
+
+Sie können die Liste der unterdrückten Regeln anzeigen und, falls gewünscht, auswählen, um die Unterdrückung zu beenden.
+
+.Schritte
+. Klicken Sie auf das Symbol *Einstellungen* und wählen Sie *unterdrückte Regeln*.
++
+image:screenshot_suppressed_rules.gif["Zeigt das Settinensymbol an, das das Menü öffnet, um unterdrückte Regeln auszuwählen."]
+
+. Wählen Sie die unterdrückten Regeln aus, die angezeigt werden sollen.
+. Klicken Sie auf das Symbol *Alarme*.
++
+image:screenshot_rules_suppress.gif["Zeigt das Warnungssymbol über der Tabelle an, über dem Sie Regeln unterdrücken können."]
+
+. Wählen Sie *Ende Unterdrückung* und klicken Sie dann auf *Absenden*.
+
+
+Warnmeldungen sind für die ausgewählte Regel aktiviert und die Regel wird in der Tabelle Regeln und in der Konsole angezeigt.
+
+
+
+== Überprüfung der bisherigen Infrastrukturaktivitäten
+
+Wenn Sie eine Meldung über eine fehlgeschlagene Regel erhalten, können Sie einen Verlauf der Änderungen in der Konfiguration anzeigen, um Ihnen bei der Behebung des Problems zu helfen.
+
+.Schritte
+. Wählen Sie eine konvergente Infrastruktur aus.
+. Klicken Sie Auf *Mehr > Verlauf*.
++
+image:screenshot_history_navigation.gif["Zeigt das Menü Mehr an, das die Option Verlauf enthält."]
+
+. Klicken Sie auf einen Tag im Kalender, um die Anzahl der Warnungen und Fehler anzuzeigen, die während der einzelnen Datenerfassung ermittelt wurden.
++
+
+TIP: Die Zahl, die für jeden Tag angezeigt wird, entspricht der Anzahl der vom Agenten erfassten Daten. Wenn Sie beispielsweise das Standardeinfassungsintervall von 24 Stunden beibehalten, sollten Sie eine Sammlung pro Tag sehen.
+
++
+Das folgende Bild zeigt eine einzelne Sammlung am 27. Des Monats.
+
++
+image:screenshot_history_status.gif["Zeigt die Zahl eins und einen gelben Punkt am 27. Des Monats an."]
+
+. Wenn Sie weitere Details zu den erfassten Daten anzeigen möchten, klicken Sie für eine Sammlung auf *zum CI Dashboard*.
+. Bei Bedarf können Sie den Verlauf zum letzten Mal anzeigen, dass keine Warnungen oder Fehler erkannt wurden.
++
+Wenn Sie die Daten zwischen den beiden Erfassungszeiträumen vergleichen, können Sie erkennen, was sich geändert hat.
+
+
+
+
+
+== Berichte werden erstellt
+
+Wenn Sie eine Premium-Lizenz besitzen, können Sie verschiedene Arten von Berichten generieren, die Details zum aktuellen Status Ihrer konvergenten Infrastruktur enthalten: Einen Bestandsbericht, einen Zustandsbericht, einen Assessment-Bericht und vieles mehr.
+
+.Schritte
+. Klicken Sie Auf *Berichte*.
+. Wählen Sie einen Bericht aus und klicken Sie auf *Erstellen*.
+. Wählen Sie Ihre Optionen für den Bericht:
++
+.. Wählen Sie eine konvergente Infrastruktur aus.
+.. Wechseln Sie optional von der letzten Datenerfassung zu einer vorherigen.
+.. Wählen Sie aus, wie Sie den Bericht anzeigen möchten: In Ihrem Browser, als heruntergeladene PDF oder per E-Mail.
++
+image:screenshot_reports_generate.gif["Zeigt die Optionen zur Erstellung eines Berichts an, der die Auswahl einer konvergenten Infrastruktur und eines Snapshots umfasst, und anschließend die Auswahl des gewünschten Berichts."]
+
+
+
+
+
+Converged Systems Advisor generiert den Bericht.
+
+
+
+== Nachverfolgung von Support-Verträgen
+
+Sie können Details zu Supportverträgen für jedes Gerät in einer Konfiguration hinzufügen: Startdatum, Enddatum und Vertrags-ID. So können Sie die Details einfach an einem zentralen Standort verfolgen und wissen, wann die Supportverträge für jedes Gerät erneuert werden müssen.
+
+.Schritte
+. Klicken Sie auf *Wählen Sie eine CI* und wählen Sie die konvergente Infrastruktur aus.
+. Klicken Sie im Widget „Supportvertrag“ auf das Symbol *Vertrag bearbeiten*.
+. Wählen Sie *Startdatum* und *Enddatum* aus, und geben Sie die *Vertrag-ID* ein.
+. Klicken Sie Auf *Absenden*.
+. Wiederholen Sie die Schritte für jedes Gerät in der Konfiguration.
+
+
+Converged Systems Advisor zeigt jetzt die Details zu den Supportverträgen für jedes Gerät an. Es wird schnell ersichtlich, welche Geräte über aktive oder abgelaufene Supportverträge verfügen.
+
+image:screenshot_support_contracts.gif["Zeigt vier Supportverträge an: Einer ist abgelaufen und die anderen drei sind aktiv."]

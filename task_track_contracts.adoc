@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: task_track_contracts.html 
+keywords: track, support, contracts, renew, converged, infrastructure, device, devices, 
+summary: Sie können Details zu Supportverträgen für jedes Gerät in einer Konfiguration hinzufügen, einschließlich Startdatum, Enddatum und Vertrags-ID. 
+---
+= Verfolgen Sie Support-Verträge
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können Details zu Supportverträgen für jedes Gerät in einer Konfiguration hinzufügen: Startdatum, Enddatum und Vertrags-ID. So können Sie die Details einfach an einem zentralen Standort verfolgen und wissen, wann die Supportverträge für jedes Gerät erneuert werden müssen.
+
+.Schritte
+. Klicken Sie auf *Wählen Sie eine CI* und wählen Sie die konvergente Infrastruktur aus.
+. Klicken Sie im Widget „Supportvertrag“ auf das Symbol *Vertrag bearbeiten*.
+. Wählen Sie *Startdatum* und *Enddatum* aus, und geben Sie die *Vertrag-ID* ein.
+. Klicken Sie Auf *Absenden*.
+. Wiederholen Sie die Schritte für jedes Gerät in der Konfiguration.
+
+
+Converged Systems Advisor zeigt jetzt die Details zu den Supportverträgen für jedes Gerät an. Es wird schnell ersichtlich, welche Geräte über aktive oder abgelaufene Supportverträge verfügen.
+
+image:screenshot_support_contracts.gif["Zeigt vier Supportverträge an: Einer ist abgelaufen und die anderen drei sind aktiv."]

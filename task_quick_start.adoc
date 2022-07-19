@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: task_quick_start.html 
+keywords: quick start, overview, deploying, getting started, get started, configuring 
+summary: Erste Schritte mit dem Agenten und Portal des Converged Systems Advisor 
+---
+= Schnellstart für Converged Systems Advisor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Erste Schritte mit dem Agenten des Converged Systems Advisor und dem Portal für FlexPod
+
+
+
+== Bereiten Sie Ihre Umgebung vor
+
+[role="quick-margin-para"]
+Überprüfen Sie die Unterstützung Ihrer Konfiguration. link:task_prepare_environment.html["Bereiten Sie Ihre Umgebung vor"].
+
+
+
+== Erstellen von Konten auf FlexPod-Geräten
+
+[role="quick-margin-para"]
+Konten einrichten, die im Cisco UCS Manager, auf Cisco Nexus Switches, für Ihre ONTAP Systeme, für VMware und im APIC eingerichtet werden. Diese Konten werden vom Agenten zum Erfassen von Konfigurationsdaten verwendet.link:task_create_accounts_flexpod_devices.html["Erstellen von Konten auf FlexPod-Geräten"].
+
+
+
+== Gewähren Sie CSA-Benutzerberechtigungen über einen TACACS+-Server
+
+[role="quick-margin-para"]
+Wenn Sie einen TACACS+-Server verwenden, müssen Sie den CSA-Benutzerberechtigungen für Ihre Switches gewähren, eine Benutzerberechtigungsgruppe erstellen und der Gruppe Zugriff auf die spezifischen von CSA benötigten Setup-Befehle gewähren.link:task_grant_user_privileges.html["Gewähren Sie CSA-Benutzerberechtigungen über einen TACACS+-Server"]
+
+
+
+== Einrichten und Bereitstellen des Agenten
+
+[role="quick-margin-para"]
+Implementieren Sie den Converged Systems Advisor-Agent auf einem VMware ESXi-Server. Der Agent erfasst Konfigurationsdaten zu jedem Gerät in Ihrer konvergenten FlexPod Infrastruktur und sendet diese Daten an das Converged Systems Advisor Portal.link:task_setup_deploy_agent.html["Agenten bereitstellen"].
+
+
+
+== Hinzufügen/Teilen der Infrastruktur im Portal
+
+[role="quick-margin-para"]
+Fügen Sie jedes FlexPod Gerät zum Converged Systems Advisor Portal hinzu, um eine komplette Infrastruktur zu erstellen, die Sie überwachen können. Außerdem können Sie eine konvergente Infrastruktur gemeinsam nutzen, um sich andere Personen bei dem Portal anzumelden und so die Konfiguration anzuzeigen und zu überwachen.link:task_add_infrastructure.html["Fügen Sie im Portal Infrastruktur hinzu und teilen Sie sie"].
+
+
+
+== Konfigurieren Sie Benachrichtigungen
+
+[role="quick-margin-para"]
+Mit einer Premium-Lizenz können Sie Benachrichtigungen einrichten, die Sie über E-Mail-Benachrichtigungen bei Änderungen an Ihrer FlexPod-Infrastruktur benachrichtigen.link:task_configure_notifications.html["Konfigurieren Sie Benachrichtigungen"]
+
+
+
+== Setzen Sie eine statische IP-Adresse
+
+[role="quick-margin-para"]
+Wenn in Ihrer Umgebung kein DHCP-Server vorhanden ist, können Sie eine statische IP-Adresse auf dem Converged Systems Advisor Agent festlegen.link:task_setting_static_ip.html["Legen Sie eine statische IP-Adresse für den Agenten fest"]

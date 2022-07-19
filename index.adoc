@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+keywords: converged systems advisor, netapp, documentation, flexpod, converged, infrastructure, validation, monitoring, getting started, new 
+summary: NetApp Converged Systems Advisor validiert, überwacht und optimiert die Implementierung Ihrer konvergenten FlexPod Infrastruktur, um die beste Performance und Verfügbarkeit für Ihre Business-Applikationen zu gewährleisten. 
+---
+= Converged Systems Advisor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Converged Systems Advisor validiert, überwacht und optimiert die Implementierung Ihrer konvergenten FlexPod Infrastruktur, um die beste Performance und Verfügbarkeit für Ihre Business-Applikationen zu gewährleisten.
+
+
+
+== Entdecken Sie, was neu ist
+
+link:reference_new.html["Welche Neuerungen bietet Converged Systems Advisor"]
+
+
+
+== Los geht's
+
+link:task_quick_start.html["Schnellstart"]
+
+
+
+== Converged Systems Advisor
+
+* link:concept_overview.html["Überblick"]
+* link:concept_architecture.html["Der Netapp Architektur Sind"]
+* link:concept_licensing.html["Lizenzierung"]
+
+
+
+
+== Holen Sie sich Hilfe und treten Sie mit Kollegen in Kontakt
+
+https://community.netapp.com/t5/Converged-Infrastructure/ct-p/flexpod-and-converged-infrastructure["NetApp Community: Konvergente Infrastrukturen"^]

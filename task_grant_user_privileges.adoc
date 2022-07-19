@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: task_grant_user_privileges.html 
+keywords: grant, user, privileges, TACACS+, server, group, command, commands, access, CSA, user, account 
+summary: Wenn Sie einen TACACS+-Server verwenden und CSA-Benutzerberechtigungen für Ihre Switches gewähren müssen, müssen Sie eine Benutzerberechtigungsgruppe erstellen und der Gruppe Zugriff auf die spezifischen von CSA benötigten Setup-Befehle gewähren. 
+---
+= Gewähren Sie CSA-Benutzerberechtigungen über einen TACACS+-Server
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie einen TACACS+-Server verwenden und CSA-Benutzerberechtigungen für Ihre Switches gewähren müssen, müssen Sie eine Benutzerberechtigungsgruppe erstellen und der Gruppe Zugriff auf die spezifischen von CSA benötigten Setup-Befehle gewähren. Die folgenden Befehle sollten in die Konfigurationsdatei Ihres TACACS+ Servers geschrieben werden.
+
+.Schritte
+. Geben Sie Folgendes ein, um eine Benutzerberechtigungsgruppe mit schreibgeschütztem Zugriff zu erstellen: Group=Group_Name { default Service=Deny Service=exec{ priv-lvl=0 } }
+. Geben Sie Folgendes ein, um den Zugriff auf die von CSA benötigten Befehle zu gewähren: Cmd=show { permit "Umwelt" erlauben "Version" Genehmigung "Feature" erlauben "Feature-set" Genehmigungs-Hardware.* erlauben "Interface" erlauben "Interface" erlauben "Interface Transceiver" erlauben "Inventory" Genehmigung "Lizenz" erlauben "Modul" Genehmigung "Port-Channel Datenbank" erlauben "ntp Peers" erlauben "Lizenz-Nutzung" erlauben "Port-Channel Zusammenfassung" erlauben "running-config" mgint Name "mgint" erlauben "mgint" „cdp Nachbarn Detail“ erlauben „vlan“-Genehmigung „vpc“ Genehmigung „vpc Peer-keepalive“ Genehmigung „mac address-table“ Genehmigung „lacp Port-Channel“ Genehmigung „Policy-map“ Genehmigung „Policy-map System type qos“ Genehmigung „Policy-map System type Queuing“ Genehmigung „Policy-map System type Network-qos“ Genehmigung „zoneset aktiv“ erlauben „san-Port-Channel Zusammenfassung“ erlauben „flocns Datenbank Detail“ erlauben „datenbank zulassen“ Genehmigung "Zoneet Active"-Genehmigung "vsan" "vsan-Nutzung"-Genehmigung "vsan-Mitgliedschaft" }
+. Geben Sie Folgendes ein, um Ihr CSA-Benutzerkonto der neu erstellten Gruppe hinzuzufügen: User=user_Account{ Member=Group_Name Login=file/etc/passwd }
+

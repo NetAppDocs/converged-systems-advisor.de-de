@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task_review_infrastructure_history.html 
+keywords: review, history, converged, infrastructure, configuration, resolve, issue, warnings, failures, collected, collections, data 
+summary: Wenn Sie eine Meldung über eine fehlgeschlagene Regel erhalten, können Sie einen Verlauf der Änderungen in der Konfiguration anzeigen, um Ihnen bei der Behebung des Problems zu helfen. 
+---
+= Überprüfen Sie die Historie einer Infrastruktur
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie eine Meldung über eine fehlgeschlagene Regel erhalten, können Sie einen Verlauf der Änderungen in der Konfiguration anzeigen, um Ihnen bei der Behebung des Problems zu helfen.
+
+.Schritte
+. Wählen Sie eine konvergente Infrastruktur aus.
+. Klicken Sie Auf *Mehr > Verlauf*.
++
+image:screenshot_history_navigation.gif["Zeigt das Menü Mehr an, das die Option Verlauf enthält."]
+
+. Klicken Sie auf einen Tag im Kalender, um die Anzahl der Warnungen und Fehler anzuzeigen, die während der einzelnen Datenerfassung ermittelt wurden.
++
+
+TIP: Die Zahl, die für jeden Tag angezeigt wird, entspricht der Anzahl der vom Agenten erfassten Daten. Wenn Sie beispielsweise das Standardeinfassungsintervall von 24 Stunden beibehalten, sollten Sie eine Sammlung pro Tag sehen.
+
++
+Das folgende Bild zeigt eine einzelne Sammlung am 27. Des Monats.
+
++
+image:screenshot_history_status.gif["Zeigt die Zahl eins und einen gelben Punkt am 27. Des Monats an."]
+
+. Wenn Sie weitere Details zu den erfassten Daten anzeigen möchten, klicken Sie für eine Sammlung auf *zum CI Dashboard*.
+. Bei Bedarf können Sie den Verlauf zum letzten Mal anzeigen, dass keine Warnungen oder Fehler erkannt wurden.
++
+Wenn Sie die Daten zwischen den beiden Erfassungszeiträumen vergleichen, können Sie erkennen, was sich geändert hat.
+
+

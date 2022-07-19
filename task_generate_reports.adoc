@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: task_generate_reports.html 
+keywords: generate, report, reports, converged, infrastructure, health, inventory, assessment, deployment, validation, partners, issues, configured, configuration, interoperability, downloaded, PDF, email 
+summary: Sie können verschiedene Arten von Berichten generieren, z. B. einen Integritätsbericht oder einen Bericht zur Validierung der Implementierung für Partner. 
+---
+= Berichte generieren
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie eine Premium-Lizenz besitzen, können Sie verschiedene Berichtstypen erstellen, die Einzelheiten zum aktuellen Status Ihrer konvergenten Infrastruktur enthalten: Einen Bestandsbericht, einen Integritätsbericht, einen Assessment-Bericht, einen Validierungsbericht zur Implementierung für Partner und mehr.
+
+.Schritte
+. Klicken Sie Auf *Berichte*.
+. Wählen Sie einen Bericht aus und klicken Sie auf *Erstellen*.
+. Wählen Sie Ihre Optionen für den Bericht:
++
+.. Wählen Sie eine konvergente Infrastruktur aus.
+.. Wechseln Sie optional von der letzten Datenerfassung zu einer vorherigen.
+.. Wählen Sie aus, wie Sie den Bericht anzeigen möchten: In Ihrem Browser, als heruntergeladene PDF oder per E-Mail.
++
+image:screenshot_reports_generate.gif["Zeigt die Optionen zur Erstellung eines Berichts an, der die Auswahl einer konvergenten Infrastruktur und eines Snapshots umfasst, und anschließend die Auswahl des gewünschten Berichts."]
+
+
+
+
+
+Converged Systems Advisor generiert den Bericht.

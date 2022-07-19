@@ -1,0 +1,68 @@
+---
+settings:
+  name: Converged Systems Advisor
+  rss_page: reference_new.html
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: de-de,us-en,ja-jp,zh-cn,zh-tw,ko-kr,fr-fr
+sidebar:
+  entries:
+  - title: Converged Systems Advisor - Dokumentation
+    url: "/index.html"
+  - title: Versionshinweise
+    entries:
+    - title: Was ist neu
+      url: "/reference_new.html"
+    - title: Neues Archiv
+      url: "/reference_archive.html"
+    - title: Bekannte Probleme
+      url: "/reference_issues.html"
+  - title: Konzepte
+    entries:
+    - title: Überblick
+      url: "/concept_overview.html"
+    - title: Der Netapp Architektur Sind
+      url: "/concept_architecture.html"
+    - title: Lizenzierung
+      url: "/concept_licensing.html"
+    - title: Sicherheit
+      url: "/concept_security.html"
+    - title: Benutzerrollen
+      url: "/reference_user_roles.html"
+  - title: Erste Schritte
+    entries:
+    - title: Schnellstart
+      url: "/task_quick_start.html"
+    - title: Bereiten Sie Ihre Umgebung vor
+      url: "/task_prepare_environment.html"
+    - title: Erstellen von Konten für FlexPod-Geräte
+      url: "/task_create_accounts_flexpod_devices.html"
+    - title: Agenten einrichten und implementieren
+      url: "/task_setup_deploy_agent.html"
+    - title: Fügen Sie Infrastruktur im Portal hinzu
+      url: "/task_add_infrastructure.html"
+    - title: Konfigurieren Sie Benachrichtigungen
+      url: "/task_configure_notifications.html"
+    - title: Setzen Sie eine statische IP auf dem Agenten
+      url: "/task_setting_static_ip.html"
+  - title: Monitoring der Infrastruktur
+    entries:
+    - title: Überprüfung des Infrastrukturverlaufs
+      url: "/task_review_infrastructure_history.html"
+    - title: Überwachen von Regeln
+      url: "/task_monitor_rules.html"
+    - title: Berichte generieren
+      url: "/task_generate_reports.html"
+    - title: Verfolgen Sie Support-Verträge
+      url: "/task_track_contracts.html"
+  - title: Validieren der Bereitstellung für Partner und Reseller
+    url: "/task_deployment_validation_partners_resellers.html"
+  - title: Fehlerbehebung
+    url: "/task_troubleshooting.html"
+  - title: Weiterführende Links
+    url: "/reference_additional_info.html"
+  - title: Rechtliche Hinweise
+    url: "/reference_legal_notices.html"

@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task_deployment_validation_partners_resellers.html 
+keywords: review, alerts, warnings, failed, rules, alerts, history, remediate, remediation, suppress, display, fail, warning, pass, notifications, email 
+summary: Als Partner oder Reseller können Sie die Implementierung der Infrastruktur eines Kunden validieren. 
+---
+= Validieren der Bereitstellung für Partner und Reseller
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Als Partner oder Reseller können Sie die Implementierung der Infrastruktur Ihres Kunden validieren. Dazu überprüfen Sie die im Dashboard angezeigten Daten oder erstellen einen Integritätsbericht.
+
+.Bevor Sie beginnen
+* Sie haben ein neues FlexPod System an Ihrem Kundenstandort installiert oder Sie arbeiten mit einem vorhandenen FlexPod zusammen.
+* Sie haben Konten auf FlexPod-Geräten erstellt.
+* Wenn Sie einen TACACS+-Server verwenden, haben Sie CSA-Benutzerrechte erteilt.
+* Sie haben den Agent heruntergeladen und installiert.
++
+Siehe link:task_setup_deploy_agent.html["Einrichten und Bereitstellen des Agenten"].
+
+* Sie richten das Netzwerk für den Agenten ein, und optional haben Sie ein SSL-Zertifikat auf dem Agenten installiert.
+* Mit Ihren NetApp Zugangsdaten haben Sie für die Integration der Infrastruktur in das Portal durch den Kunden geschaffen.
++
+Siehe link:task_add_infrastructure["Infrastruktur zum Portal hinzufügen"] So erstellen Sie eine CI im CSA-Portal.
+
+* Sie haben auch optional eine Shared IT-Infrastruktur mit anderen Benutzern gemeinsam genutzt.
+
+
+Partner und Reseller verwenden ihre eigenen NetApp Zugangsdaten, um sich beim CSA Portal anzumelden und den Validierungsprozess zu starten.
+
+. Melden Sie sich bei an https://csa.netapp.com/["Converged Systems Advisor-Portal"^] Verwendung Ihrer NetApp Anmeldedaten.
+. Klicken Sie auf * Wählen Sie eine CI*, und klicken Sie dann auf die entsprechende CI für den Kunden, oder geben Sie den CI-Namen in das Suchfeld ein. Das Dashboard für die CI wird angezeigt.
+
+
+Als Partner oder Reseller können Sie die Infrastruktur Ihres Kunden mithilfe der folgenden Methoden validieren:
+
+* Im Dashboard können Sie verschiedene Aspekte der Infrastruktur validieren:
++
+** *Firmware-Interoperabilität* zeigt die installierten Softwareversionen an. Klicken Sie auf die einzelnen Überschriften, um weitere Details anzuzeigen.
+** *Supportvertrag* zeigt an, wann Verträge ablaufen. Klicken Sie auf *Details anzeigen*, um weitere Informationen zu erhalten.
+** *Agent Status* zeigt Details zum Agenten einschließlich der zu überwachenden Geräte an.
+** *Kapazität* zeigt die Nutzung von Festplattenspeicher, Netzwerkports und dem UCS Blade Chassis. Klicken Sie auf die Links, um Details zu jeder Auslastung anzuzeigen.
+** *Health* zeigt den Status der Regeln für Speicher-, Rechen-, Netzwerk- und Virtualisierungsfunktionen der Infrastruktur grafisch an. Klicken Sie auf die Farbbereiche der Grafiken, um weitere Details anzuzeigen.
+** *Regelzusammenfassung* zeigt Warnungen für fehlgeschlagene Regeln und Warnungen an. Klicken Sie links neben jeder Zeile auf die Pfeile, oder klicken Sie auf den Gerätenamen, um weitere Details anzuzeigen.
+
+
+* Wählen Sie in der Aktionsleiste *Berichte->Integritätsbericht* aus, um einen detaillierten ConvergedSystem Health Report zu erstellen. Sie können sie im Browser anzeigen, als PDF-Datei herunterladen oder per E-Mail teilen.
+

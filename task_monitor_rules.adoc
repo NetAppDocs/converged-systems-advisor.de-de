@@ -1,0 +1,123 @@
+---
+sidebar: sidebar 
+permalink: task_monitor_rules.html 
+keywords: review, alerts, warnings, failed, rules, alerts, history, remediate, remediation, suppress, display, fail, warning, pass, notifications, email 
+summary: Sie können fehlgeschlagene Regeln korrigieren, Regeln unterdrücken, die Liste der unterdrückten Regeln anzeigen und, falls gewünscht, die Unterdrückung beenden. 
+---
+= Überwachung von Regeln in der Infrastruktur
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um Ihre Infrastruktur zu überwachen, können Sie fehlgeschlagene Regeln korrigieren, Regeln unterdrücken, die Liste der unterdrückten Regeln anzeigen und, falls gewünscht, die Unterdrückung beenden.
+
+
+
+== Prüfen Sie die Warnungen auf fehlgeschlagene Regeln und Warnungen
+
+Converged Systems Advisor überwacht Ihre Infrastruktur kontinuierlich und generiert Warnungen und Ausfälle, um sicherzustellen, dass das System konfiguriert ist und die Best Practices eingehalten werden.
+
+.Schritte
+. Melden Sie sich bei an https://csa.netapp.com/["Converged Systems Advisor-Portal"^] Und klicken Sie auf *Regeln*.
++
+Auf der Seite Regeln wird eine Zusammenfassung aller Regeln angezeigt. Der Status für jede Regel ist entweder *Pass*, *Warnung* oder *FAIL*.
+
+. Klicken Sie in der Spalte Status auf das Filtersymbol und wählen Sie *Fail*, *Warnung* oder beides aus.
++
+image:screenshot_rules_filter.gif["Zeigt das Filtersymbol an, mit dem Sie die Tabelle filtern können, sodass nur die Regeln angezeigt werden, die bestanden, ausgefallen sind oder Warnungen einschließen."]
+
+. Prüfen Sie Details zu einzelnen Regeln, indem Sie auf den Pfeil neben der Spalte Status klicken.
++
+image:screenshot_rules_information.gif["Zeigt Details zu einer Regel an, einschließlich Beschreibung, Wirkung und Auflösung."]
+
+. Befolgen Sie die Anweisungen in der Lösung, um das Problem zu beheben.
++
+Bei Bedarf  the history for an infrastructure,Überprüfen Sie den Konfigurationsverlauf Für die Infrastruktur, die Ihnen bei der Problemlösung hilft.
+
+
+
+Der Status der Regeln, die Sie adressiert haben, sollte nach dem nächsten Erfassungszeitraum des Agenten als „Pass“ angezeigt werden.
+
+
+
+== Fehlerhafte Regeln beheben
+
+Converged Systems Advisor kann einige ausgefallene Regeln für Sie beheben, indem das zugrunde liegende Problem mit der konvergenten Infrastruktur korrigiert wird.
+
+.Über diese Aufgabe
+* Sie müssen über die Premium-Lizenz verfügen.
+* Sie müssen als Eigentümer der konvergenten Infrastruktur zugewiesen werden.
+
+
+.Schritte
+. Melden Sie sich bei an https://csa.netapp.com/["Converged Systems Advisor-Portal"^] Und klicken Sie auf *Regeln*.
++
+Auf der Seite Regeln wird eine Zusammenfassung aller Regeln angezeigt. Der Status für jede Regel ist entweder *Pass*, *Warnung* oder *FAIL*.
+
+. Wählen Sie *Filterregeln, die beseitigt werden können*.
+. Erweitern Sie die Regel, die Sie auflösen möchten.
+. Klicken Sie Auf image:wrench_icon.jpg["Zeigt das Schraubenschlüsselsymbol, mit dem Sie fehlerhafte Regeln automatisch beheben können."] In der rechten oberen Ecke der erweiterten Regel.
++
+Wenn das Symbol deaktiviert ist, liegt es entweder daran, dass der Agent offline ist, Sie keine Owner-Rechte haben oder dass Sie keine Premium-Lizenz besitzen.
+
+. Geben Sie bei Bedarf die Eingabewerte ein.
++
+Je nach fehlgeschlagener Regel sind einige Eingabewerte erforderlich, um das Problem zu lösen.
+
+. Wenn eine Datensammlung nach dem erfolgreichen Abschluss der Problembehebung durchgeführt werden soll, wählen Sie die Option *Sammeln, wenn der Korrekturjob abgeschlossen ist*.
+. Klicken Sie auf *Problembehebung ausführen*.
+. Klicken Sie Auf *Bestätigen*.
+. Um die zur Behebung fehlgeschlagener Regeln getroffenen Aktionen anzuzeigen, klicken Sie auf das Symbol *Operationen* und wählen *Korrekturmaßnahmen*.
++
+image:operations_icon.gif["Zeigt das Symbol „Vorgänge“ an, mit dem das Menü geöffnet wird, um die Aktionen zu sehen, die beseitigt wurden."]
+
+
+
+
+
+== Fehlgeschlagene Regeln unterdrücken
+
+Converged Systems Advisor ermöglicht Ihnen, Regeln zu unterdrücken, damit diese nicht im Dashboard angezeigt werden und bei Regelfehlern keine E-Mail-Benachrichtigungen mehr senden.
+
+Die Aktivierung von Telnet wird beispielsweise nicht empfohlen, aber wenn Sie es aktivieren möchten, können Sie die Regel unterdrücken.
+
+Sie müssen über die Premium-Lizenz verfügen, um Benachrichtigungen zu konfigurieren.
+
+.Schritte
+. Klicken Sie im Dashboard auf *Regeln*.
+. Finden Sie die Regeln, nach denen Sie suchen, indem Sie den Inhalt der Tabelle filtern.
+. Wählen Sie eine oder mehrere Zeilen für Regeln aus, die den Status „Warnung“ oder „Fehlschlagen“ aufweisen, und klicken Sie dann auf das Symbol „Meldungen*“.
++
+image:screenshot_rules_suppress.gif["Zeigt das Warnungssymbol über der Tabelle an, über dem Sie Regeln unterdrücken können."]
+
+. Wählen Sie eine Dauer aus und klicken Sie dann auf *Absenden*.
+
+
+
+TIP: Wenn Sie die Alarme aktivieren möchten, befolgen Sie diese Schritte, und wählen Sie *Unterdrückung beenden*.
+
+Converged Systems Advisor benachrichtigt Sie nicht mehr über die Regel für die angegebene Dauer, und die Regel wird nicht mehr im Dashboard angezeigt.
+
+
+
+== Unterdrückte Regeln anzeigen
+
+.Schritte
+. Klicken Sie auf das Symbol *Einstellungen* und wählen Sie *unterdrückte Regeln*.
++
+image:screenshot_suppressed_rules.gif["Zeigt das Settinensymbol an, das das Menü öffnet, um unterdrückte Regeln auszuwählen."]
+
+. Wählen Sie die unterdrückten Regeln aus, die angezeigt werden sollen.
+. Klicken Sie auf das Symbol *Alarme*.
++
+image:screenshot_rules_suppress.gif["Zeigt das Warnungssymbol über der Tabelle an, über dem Sie Regeln unterdrücken können."]
+
+. Wählen Sie *Ende Unterdrückung* und klicken Sie dann auf *Absenden*.
+
+
+Warnmeldungen sind für die ausgewählte Regel aktiviert und die Regel wird in der Tabelle Regeln und in der Konsole angezeigt.

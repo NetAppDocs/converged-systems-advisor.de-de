@@ -1,0 +1,196 @@
+---
+sidebar: sidebar 
+permalink: task_create_accounts_flexpod_devices.html 
+keywords: create, accounts, FlexPod, devices, support, accounts, account, configuration, registering, FlexPod, VMware, ESXi server, connection, connectivity, agent, portal 
+summary: Richten Sie zum Starten Konten für FlexPod-Geräte ein. 
+---
+= Erstellen von Konten für FlexPod-Geräte
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Richten Sie zum Einstieg Konten für FlexPod-Geräte ein:
+
+*  a read-only account for Cisco UCS Manager
+*  a read-only account for Nexus switches
+*  an admin account for ONTAP
+*  a read-only account for VMware
+*  a read-only account on the APIC
+*  CSA user privileges using a TACACS+ server
+
+
+Der Agent verwendet diese Konten, um Konfigurationsinformationen von jedem Gerät zu erfassen.
+
+
+
+== Erstellen eines schreibgeschützten Kontos für Cisco UCS Manager
+
+.Schritte
+. Melden Sie sich bei Cisco UCS Manager an.
+. Erstellen Sie einen lokal authentifizierten Benutzer namens _csa-Readonly_.
++
+
+TIP: Alle neuen Benutzer sind standardmäßig schreibgeschützt.
+
+
+
+
+
+== Erstellen eines schreibgeschützten Kontos für Nexus Switches
+
+.Schritte
+. Melden Sie sich über SSH oder Telnet bei jedem Nexus Switch an.
+. Globalen Konfigurationsmodus aufrufen:
++
+....
+ configure terminal
+.. Create a new user:
+....
++
+....
+ username [name] password [password] role network-operator
+.. Save the configuration:
+....
++
+ copy running configuration startup configuration
+
+
+Wenn Sie einen TACACS+-Server verwenden und CSA-Benutzerrechte erteilen müssen, gehen Sie zu link:task_grant_user_privileges.html["Gewähren von CSA-Benutzerberechtigungen über einen TACACS+-Server"].
+
+
+
+== Erstellen eines Administratorkontos für ONTAP
+
+.Schritte
+. Melden Sie sich bei OnCommand System Manager an und klicken Sie auf das Symbol für die Einstellungen:
++
+image:screenshot_system_manager_settings.gif["Das Einstellungssymbol in System Manager."].
+
+. Klicken Sie auf der Seite Benutzer auf *Hinzufügen*.
+. Geben Sie einen Benutzernamen und ein Passwort ein und fügen Sie *ssh*, *ontapi* und *Konsole* als Benutzeranmeldungsmethoden mit Admin-Zugriff hinzu.
++
+image:screenshot_system_manager_add_user.gif["Zeigt den Bildschirm Benutzer hinzufügen in System Manager, in dem ein neuer ONTAP-Benutzer ssh- und ontapi-Berechtigungen hat."]
+
+
+
+
+
+== Erstellen Sie ein schreibgeschütztes Konto für VMware
+
+.Schritte
+. Melden Sie sich bei vCenter an.
+. Wählen Sie im vCenter Menü die Option *Administration*.
+. Wählen Sie unter Rollen *schreibgeschützt*.
+. Klicken Sie auf das Symbol für *Rollenaktion klonen* und ändern Sie den Namen in *CSA*.
+. Wählen Sie die neu erstellte * CSA*-Rolle aus.
+. Klicken Sie auf das Symbol * Rolle bearbeiten*.
+. Wählen Sie unter *Rolle bearbeiten* *Global* und dann *Lizenzen*.
+. Wählen Sie in der Seitenleiste *Single Sign On->Users and groups->Create a New user*.
+. Benennen Sie den neuen Benutzer *CSARO* unter DOMAIN vpshere.local.
+. Wählen Sie in der Seitenleiste unter *Zugangskontrolle* die Option *Globale Berechtigungen* aus.
+. Wählen Sie den Benutzer *CSARO* und weisen SIE DIE ROLLE *CSA* zu.
+. Melden Sie sich beim Web Client an.
++
+Benutzerkennung: *CSARO@vsphere.local* und zuvor erstelltes Passwort.
+
+
+
+
+
+== Erstellen Sie ein schreibgeschütztes Konto im APIC
+
+.Schritte
+. Klicken Sie Auf *Admin*.
+. Klicken Sie auf *Neue lokale Benutzer erstellen*.
+. Geben Sie unter *User Identity* die Benutzerinformationen ein.
+. Wählen Sie unter *Sicherheit* alle Optionen für die Sicherheitsdomain aus.
+. Klicken Sie auf *+*, um bei Bedarf Benutzerzertifikate und SSH-Schlüssel hinzuzufügen.
+. Klicken Sie Auf *Weiter*.
+. Klicken Sie auf *+*, um Rollen für Ihre Domain hinzuzufügen.
+. Wählen Sie im Dropdown-Menü den Namen der *Rolle* aus.
+. Wählen Sie *Lesen* für den Rollentyp *.
+. Klicken Sie Auf *Fertig Stellen*.
+
+
+
+
+== Gewähren Sie CSA-Benutzerberechtigungen über einen TACACS+-Server
+
+Wenn Sie einen TACACS+-Server verwenden und CSA-Benutzerberechtigungen für Ihre Switches gewähren müssen, sollten Sie eine Benutzerberechtigungsgruppe erstellen und der Gruppe Zugriff auf die spezifischen Setup-Befehle gewähren, die von CSA benötigt werden.
+
+Die folgenden Befehle sollten in die Konfigurationsdatei Ihres TACACS+ Servers geschrieben werden.
+
+.Schritte
+. Geben Sie die folgende ein, um eine Benutzerberechtigungsgruppe mit schreibgeschütztem Zugriff zu erstellen:
+
+
+[listing]
+----
+  group=group_name {
+    default service=deny
+    service=exec{
+      priv-lvl=0
+    }
+  }
+----
+. Geben Sie Folgendes ein, um den Zugriff auf die von CSA benötigten Befehle zu gewähren:
+
+
+[listing]
+----
+  cmd=show {
+    permit "environment"
+    permit "version"
+    permit "feature"
+    permit "feature-set"
+    permit hardware.*
+    permit "interface"
+    permit "interface"
+    permit "interface transceiver"
+    permit "inventory"
+    permit "license"
+    permit "module"
+    permit "port-channel database"
+    permit "ntp peers"
+    permit "license usage"
+    permit "port-channel summary"
+    permit "running-config"
+    permit "startup-config"
+    permit "running-config diff"
+    permit "switchname"
+    permit "int mgmt0"
+    permit "cdp neighbors detail"
+    permit "vlan"
+    permit "vpc"
+    permit "vpc peer-keepalive"
+    permit "mac address-table"
+    permit "lacp port-channel"
+    permit "policy-map"
+    permit "policy-map system type qos"
+    permit "policy-map system type queuing"
+    permit "policy-map system type network-qos"
+    permit "zoneset active"
+    permit "san-port-channel summary"
+    permit "flogi database"
+    permit "fcns database detail"
+    permit "fcns database detail"
+    permit "zoneset active"
+    permit "vsan"
+    permit "vsan usage"
+    permit "vsan membership"
+    }
+----
+. Geben Sie Folgendes ein, um Ihr CSA-Benutzerkonto der neu erstellten Gruppe hinzuzufügen:
+
+
+[listing]
+----
+  user=user_account{
+    member=group_name
+    login=file/etc/passwd
+  }
+----

@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: task_prepare_environment.html 
+keywords: prepare, environment, verifying, support, accounts, account, configuration, registering, FlexPod, VMware, ESXi server, connection, connectivity, agent, portal 
+summary: Für den Einstieg in Converged Systems Advisor ist die Vorbereitung der Umgebung erforderlich. 
+---
+= Bereiten Sie Ihre Umgebung vor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Für den Einstieg in Converged Systems Advisor ist die Vorbereitung der Umgebung erforderlich. Bevor Ihre Umgebung vorbereitet wird, umfasst die Überprüfung des Supports für Ihre Konfiguration und die Registrierung für ein NetApp Support Site Konto.
+
+Vielleicht möchten Sie es link:concept_architecture.html["Converged Systems Advisor funktioniert"] Bevor Sie beginnen.
+
+.Schritte
+. Überprüfen Sie die Unterstützung im http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^]:
++
+.. Vergewissern Sie sich, dass Converged Systems Advisor Ihre konvergente FlexPod Infrastruktur unterstützt.
+.. Stellen Sie sicher, dass Sie über einen unterstützten VMware ESXi-Server für den Converged Systems Advisor-Agenten verfügen.
++
+Um die Bandbreitenauslastung zu minimieren, empfiehlt NetApp, den Agenten im selben Datacenter zu installieren, wie die konvergente FlexPod Infrastruktur.
+
+
+
+. Stellen Sie sicher, dass das Netzwerk, in dem Sie den Agenten installieren, die Verbindung zwischen den Komponenten zulässt:
++
+** Der Agent muss mit jeder FlexPod Komponente verbunden sein, damit er Konfigurationsdaten erfassen kann.
+** Der Agent benötigt außerdem eine ausgehende Internetverbindung, um mit den folgenden Endpunkten zu kommunizieren:
++
+*** csa.netapp.com
+*** docker.com
+*** docker.io
+
+
+
+
+. Wechseln Sie zum https://mysupport.netapp.com["NetApp Support Website"^] Und registrieren Sie sich für ein Konto, wenn Sie nicht haben ein.
++
+Um den Agenten zu konfigurieren und auf das Portal zuzugreifen, ist ein NetApp Support Site Konto erforderlich.
+
+

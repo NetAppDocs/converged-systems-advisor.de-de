@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: task_deployment_validation.html 
+keywords: partner, validate, deployment validation 
+summary: Als NetApp Partner können Sie mit Converged Systems Advisor beginnen, indem Sie mit Ihrem Kunden zusammenarbeiten, um den Agenten zu implementieren und das Portal einzurichten, bevor Sie eine Validierung der Implementierung durchführen. 
+---
+= Validierungsbericht für Partner der Implementierung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Partner können eine Implementierungsvalidierung durchführen, um sicherzustellen, dass die konvergente FlexPod Infrastruktur ordnungsgemäß konfiguriert wurde. Der Partner kann den Bericht dann an Kunden weitergeben.
+
+.Schritte
+. Melden Sie sich bei an https://csa.netapp.com/["Converged Systems Advisor-Portal"^].
+. Erweitern Sie die Kundenkonfiguration über die Kundenliste.
++
+image:screenshot_partner_customer_list.gif["Zeigt drei konvergente Infrastrukturen für einen Kunden."]
+
+. Klicken Sie unter Deployment Validation Report auf *Erstellen*.
+. Wählen Sie aus, ob Sie den Bericht in Ihrem Browser, in einer PDF-Datei oder per E-Mail anzeigen möchten.
+. Prüfen Sie den Bericht und beheben Sie alle Interoperabilitätsprobleme und Fehler bei der Validierung der Implementierung.
++
+*Beispiel*
+
++
+In dieser Beispielkonfiguration werden die Firmware-Versionen der Nexus Switches nicht unterstützt:
+
++
+image:screenshot_validation_interop.gif["Zeigt den Abschnitt Interoperabilität des Validierungsberichts zur Implementierung. Es enthält zwei Switches mit nicht unterstützten Firmware-Versionen."]
+
++
+Auch vier Validierungsregeln schlugen sich aufgrund von Problemen mit der Switch-Konnektivität fehl:
+
++
+image:screenshot_validation_errors.gif["Zeigt den Fehlerbereich des Validierungsberichts für die Bereitstellung an. Das Fabric Interconnect ist keine Uplink zur entsprechenden Nexus Fibre Channel Fabric."]
+
++
+Durch ein Upgrade der Firmware kann die Interoperabilität der Konfiguration korrigiert und das Hinzufügen der Links kann die fehlgeschlagenen Validierungsregeln korrigiert werden.
+
+. Sobald Sie die Probleme behoben haben, sammeln Sie Daten, um sicherzustellen, dass Converged Systems Advisor über die neuesten Konfigurationsdaten verfügt:
++
+.. Wählen Sie die konvergente Infrastruktur aus.
+.. Klicken Sie oben rechts auf *Sammeln*.
++
+image:screenshot_collect_button.gif["Zeigt die Erfassungs-Schaltfläche oben rechts an, die nach der Auswahl einer konvergenten Infrastruktur verfügbar ist."]
+
+
+
+. Erstellen Sie den Bericht erneut, um zu überprüfen, ob Sie die Probleme behoben haben.
+. Senden Sie den Abschlussbericht zur Validierung der Implementierung an Ihren Kunden.
+
+
+Die konvergente Infrastruktur wird nun gemäß den Best Practices eingerichtet.

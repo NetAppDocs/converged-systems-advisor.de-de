@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: reference_new.html 
+keywords: 'new, features, what"s new, enhancements, release notes' 
+summary: NetApp aktualisiert regelmäßig den Converged Systems Advisor, um Ihnen neue Funktionen, Verbesserungen und Fehlerbehebungen zu bieten. 
+---
+= Was ist neu bei Converged Systems Advisor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp aktualisiert regelmäßig den Converged Systems Advisor, um Ihnen neue Funktionen, Verbesserungen und Fehlerbehebungen zu bieten.
+
+Um zu überprüfen, ob die FlexPod-Komponenten vom CSA-Agenten unterstützt werden, verwenden Sie die http://mysupport.netapp.com/matrix["NetApp Interoperabilitäts-Matrix-Tool"^] (IMT).
+
+
+
+== 31 Juli 2020
+
+Die Version umfasst folgende Verbesserungen:
+
+*  functionality for storage change detection (diffs)
+*  configuration assurance for cluster interconnect switches
+*  coverage of NVMe designs
+
+
+
+
+== Neue Funktionen zur Erkennung von Speicheränderungen (diffs)
+
+Jetzt können Sie Änderungen erkennen, die auf dem Storage-System aufgetreten sind. Klicken Sie auf den Seiten *Speicherbestand* auf *Konfigurationsdifferenz anzeigen*, um nach Änderungen zu suchen. Wählen Sie dann eine frühere Konfigurationsdaten und -Zeit aus, die mit der aktuellsten Storage-Konfiguration verglichen werden. Alle vorgenommenen Änderungen werden zur schnellen Überprüfung markiert.
+
+
+
+== Erweiterte Konfigurationssicherung für Cluster-Interconnect-Switches
+
+Im Converged Systems Advisor Portal wurden die Konfigurationsprüfungen erweitert, um die Unterstützbarkeit des ONTAP Cluster Interconnect Switching für die folgenden Modelle zu überwachen:
+
+* Cisco Nexus 3132Q-V
+* Cisco Nexus 3232C
+* Cisco Nexus 92300YC
+
+
+
+
+== Erste Abdeckung von NVMe-Designs
+
+Die ersten Überprüfungen der Konfigurationssicherung wurden um das Monitoring der Support-Möglichkeiten von NVMe ONTAP Storage in FlexPod erweitert.

@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: concept_licensing.html 
+keywords: licenses, standard, premium, features, licensing, alerts, notifications, emails, reports, term, subscription, reporting 
+summary: Zum Freischalten der Funktionen im Converged Systems Advisor ist eine Lizenz erforderlich. Für jede konvergente FlexPod Infrastruktur stehen Ihnen einige Lizenzierungsoptionen zur Verfügung. 
+---
+= Lizenzierung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Zum Freischalten der Funktionen im Converged Systems Advisor ist eine Lizenz erforderlich. Für jede konvergente FlexPod Infrastruktur stehen Ihnen einige Lizenzierungsoptionen zur Verfügung.
+
+[cols="12,64,24"]
+|===
+| Lizenz | Funktionen | Bedingungen 
+
+
+| Keine Lizenz  a| 
+Eingeschränkte Version zur Demonstration der Produktfunktionen:
+
+* Überwachung von FlexPod-Konfigurationen für einen Testzeitraum von 24 Stunden
+* Dashboards zum Systemzustand, um die Compliance mit FlexPod Best Practices anzuzeigen
+* Begrenzte Anzahl an Beständen und Korrekturen (in lizenzierten Versionen verfügbar)
+
+ a| 
+* Kostenlos
+* Einmalverwendung (24 Stunden)
+
+
+
+
+| Standard  a| 
+* Kontinuierliches Monitoring von FlexPod Konfigurationen
+* Dashboards zum Systemzustand, um die Compliance mit FlexPod Best Practices anzuzeigen
+* Firmware-Interoperabilität für Computing, Netzwerk, Storage und Hypervisor
+* Lifecycle-Management-Tools zur Identifizierung von Änderungen und Vermeidung von Konfigurationstendenzen
+* Detaillierte Bestands- und Systemdiagramme zur erweiterten Fehlerbehebung
+* Support direkt von NetApp
+
+ a| 
+Abonnement-basierte Lizenz:
+
+* Mindestens 12 Monate
+* Maximal 60 Monate
+
+
+
+
+| Premium  a| 
+Alle Funktionen der Standardlizenz enthalten plus:
+
+* Berichterstellung
++
+Umfassende Echtzeit-Berichte über den Zustand, die Interoperabilität und den Bestand von FlexPod
+
+* Benachrichtigung und Alarmierung
++
+Regelmäßige Benachrichtigungen über den Zustand der Konfiguration und Statusänderungen
+
+
+ a| 
+Abonnement-basierte Lizenz:
+
+* Mindestens 12 Monate
+* Maximal 60 Monate
+
+
+|===

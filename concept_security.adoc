@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: concept_security.html 
+keywords: security, data, transfer, privacy, encrypted, encryption, https, tls, customer, business 
+summary: Converged Systems Advisor erfasst Konfigurationsdaten zu Ihrer konvergenten FlexPod Infrastruktur, um das System zu validieren und zu überwachen. Es könnte für Sie interessant sein, wie die Daten erfasst werden, wie sie an NetApp übertragen werden und wie diese sicher und geschützt sind. 
+---
+= Sicherheit
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Converged Systems Advisor erfasst Konfigurationsdaten zu Ihrer konvergenten FlexPod Infrastruktur, um das System zu validieren und zu überwachen. Es könnte für Sie interessant sein, wie die Daten erfasst werden, wie sie an NetApp übertragen werden und wie diese sicher und geschützt sind.
+
+
+
+== Wie die Daten gesammelt werden
+
+Für den Zugriff auf die Geräte in der konvergenten FlexPod Infrastruktur ist der Converged Systems Advisor Agent mit Zugangsdaten erforderlich. Für Cisco UCS und Nexus Switches ist eine schreibgeschützte Zugangsdaten erforderlich, während für ONTAP die Anmeldedaten des Administrators erforderlich sind. Die Anmeldedaten werden verschlüsselt und lokal auf dem Agenten gespeichert – sie werden nicht an das Cloud-basierte Portal gesendet.
+
+Nachdem Sie die Anmeldeinformationen angegeben haben, sammelt der Agent _Configuration_-Daten von den Geräten. _Kunden_ Daten, die sich auf den Geräten befinden, werden niemals abgerufen oder übertragen. Ein repräsentatives Beispiel für die vom Agenten erfassten Konfigurationsdaten umfasst:
+
+* Kapazität
+* CPU und Arbeitsspeicher
+* Gerätekonnektivität
+* Gerätenamen und IDs
+* Gerätestatus
+* Firmware-Versionen
+* IP-Adressen
+* ISCSI-Ziele
+* Lizenzen Zu Haben
+* MAC-Adressen
+* Modellnummern
+* Seriennummern
+
+
+
+
+== Übertragung der Daten
+
+Nachdem der Agent Konfigurationsdaten aus Ihrer konvergenten FlexPod Infrastruktur erkannt hat, werden die Daten über HTTPS an das Converged Systems Advisor Portal gesendet. Die Kommunikation wird mit dem TLS 1.2-Zertifikat von NetApp verschlüsselt.
+
+image:diagram_data_transfer.gif["Zeigt eine verschlüsselte HTTPS-Verbindung vom Agenten zum Portal an."]
+
+
+
+== Wie die Daten sicher aufbewahrt werden und geschützt sind
+
+Die Konfigurationsdaten befinden sich im NetApp Netzwerk und werden von NetApp IT gemanagt. Der Schutz der Daten erfolgt über eine Datenzugriffsebene, die eine positive Identifizierung aller Benutzer erfordert, die darauf zugreifen möchten.
+
+Der Benutzer, der den Agenten implementiert hat, kann über das Converged Systems Advisor Portal auf die Daten zugreifen, indem er sich mit einem NetApp Support Site Konto anmelden. Dieser Benutzer verfügt über die Berechtigungen zum Besitzer der konvergenten Infrastruktur. Der Eigentümer kann die konvergente Infrastruktur für andere Benutzer freigeben, indem er Lese-, Schreib- oder Eigentümerberechtigungen gewährt. Diese Benutzer müssen außerdem über einen registrierten NetApp Support Site Account verfügen, um sich beim Portal anzumelden.
+
+link:reference_user_roles.html["Prüfen Sie die Unterschiede zwischen Lese-, Schreib- und Besitzrechten"].

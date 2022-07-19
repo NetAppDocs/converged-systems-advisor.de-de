@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: task_setting_static_ip.html 
+keywords: networking, ip address, static, static ip, agent 
+summary: Wenn in Ihrer Umgebung kein DHCP-Server vorhanden ist, können Sie eine statische IP-Adresse auf dem Converged Systems Advisor Agent festlegen. 
+---
+= Legen Sie eine statische IP-Adresse für den Agenten fest
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn in Ihrer Umgebung kein DHCP-Server vorhanden ist, können Sie eine statische IP-Adresse auf dem Converged Systems Advisor Agent festlegen.
+
+.Schritte
+. Melden Sie sich über den VMware vSphere Client bei der Konsole der virtuellen Maschine des Agenten an.
++
+Der Standardbenutzername ist *csa* und das Standardpasswort lautet *netapp*. Ändern Sie das Passwort, wenn Sie dazu aufgefordert werden.
+
+. Eingabe `sudo su –` An der csa-Eingabeaufforderung zum Root-Server.
+. Eingabe `# systemctl stop csa.service` Zum Stoppen des CSA-Dienstes.
+. Geben Sie Folgendes ein, um den korrekten Schnittstellendateinamen zu bestimmen.
++
+In diesem Beispiel lautet der Dateiname der Schnittstelle `eth0`.
+
++
+`# ls /etc/network/interfaces.d/`
+
+. Eingabe `# /sbin/ifdown eth0` Um die aktive Schnittstelle zu beenden.
+. Bearbeiten Sie die Datei /etc/Network/Interfaces.d/eth0 mit dem Editor Ihrer Wahl.
++
+`# nano /etc/network/interfaces.d/eth0`Oder
+`# vi /etc/network/interfaces.d/eth0`
+
++
+Die Datei enthält Folgendes:
+
++
+`allow-hotplug eth0`
+`iface eth0 inet dhcp`
+
+. Entfernen `iface eth0 inet dhcp` Und fügen Sie Folgendes hinzu: HINWEIS: Sie müssen die richtigen Werte für alle Einträge ersetzen, die den Feldnamen im folgenden Beispiel folgen. Zum Beispiel: `192.168.11.1` Ist der Wert für das Gateway im Beispiel. Jedoch statt `192.168.11.1`, Sie sollten die richtige Adresse für Ihr Gateway eingeben.
++
+`iface eth0 inet static`
+`address 192.168.11.100`
+`netmask 255.255.255.0`
+`gateway 192.168.11.1`
+`dns-domain example.com`
+`dns-nameservers 192.168.11.1`
+
+. Speichern Sie die Datei.
++
+In Nano geben Sie *Strg + o* ein, gefolgt von *Strg + x* zum Speichern.
+
+. Eingabe `vi/etc/resolv.conf` So öffnen Sie die Konfigurationsdatei:
+. Zusatz `nameserver <ip_address>` Zum Anfang der Datei.
+. Eingabe `# ifup eth0` Um die Netzwerkschnittstelle zu starten.
+. Eingabe `systemctl start csa.service` Um Converged Systems Advisor neu zu starten.
+

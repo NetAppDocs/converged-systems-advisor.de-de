@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: reference_user_roles.html 
+keywords: read only, write, owner, privileges, access, security, roles 
+summary: Wenn Sie eine konvergente Infrastruktur gemeinsam mit einem anderen Benutzer nutzen, bieten Sie Lese-, Schreib- oder Eigentümerberechtigungen. 
+---
+= Benutzerrollen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie eine konvergente Infrastruktur gemeinsam mit einem anderen Benutzer nutzen, müssen Sie Leserechte-, Schreib- oder Eigentümerberechtigungen bereitstellen.
+
+In der folgenden Tabelle sind die Aufgaben aufgeführt, die die einzelnen Benutzerrollen ausführen können.
+
+[cols="25,25,25,25"]
+|===
+| Aufgabe | Schreibgeschützt | Schreiben | Eigentümer 
+
+
+| Zeigen Sie ein System an | Ja. | Ja. | Ja. 
+
+
+| Aktualisieren Sie den Namen eines Systems | Nein | Ja. | Ja. 
+
+
+| Die Details des Support-Vertrags aktualisieren | Nein | Ja. | Ja. 
+
+
+| Bearbeiten des Datenerfassungsintervalls | Nein | Ja. | Ja. 
+
+
+| Fordern Sie eine neue Datenerfassung an | Nein | Ja. | Ja. 
+
+
+| Nutzen Sie ein System | Nein | Ja, mit schreibgeschütztem oder schreibgeschütztem Zugriff | Ja, mit schreibgeschütztem, schreibgeschütztem oder Eigentümerzugriff 
+
+
+| Ändern Sie die Komponenten eines Systems | Nein | Nein | Ja. 
+
+
+| Löschen Sie ein System | Nein | Nein | Ja. 
+|===
