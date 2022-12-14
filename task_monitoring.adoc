@@ -37,10 +37,11 @@ image:screenshot_rules_information.gif["Zeigt Details zu einer Regel an, einschl
 
 . Befolgen Sie die Anweisungen in der Lösung, um das Problem zu beheben.
 +
-Bei Bedarf  the history for an infrastructure,Überprüfen Sie den Konfigurationsverlauf Für die Infrastruktur, die Ihnen bei der Problemlösung hilft.
+Bei Bedarf <<Überprüfung der bisherigen Infrastrukturaktivitäten,Überprüfen Sie den Konfigurationsverlauf>> Für die Infrastruktur, die Ihnen bei der Problemlösung hilft.
 
 
 
+.Nachdem Sie fertig sind
 Der Status der Regeln, die Sie adressiert haben, sollte nach dem nächsten Erfassungszeitraum des Agenten als „Pass“ angezeigt werden.
 
 
@@ -86,6 +87,7 @@ Converged Systems Advisor ermöglicht Ihnen, Regeln zu unterdrücken, damit dies
 
 Die Aktivierung von Telnet wird beispielsweise nicht empfohlen, aber wenn Sie es aktivieren möchten, können Sie die Regel unterdrücken.
 
+.Über diese Aufgabe
 Sie müssen über die Premium-Lizenz verfügen, um Benachrichtigungen zu konfigurieren.
 
 .Schritte
@@ -101,6 +103,7 @@ image:screenshot_rules_suppress.gif["Zeigt das Warnungssymbol über der Tabelle 
 
 TIP: Wenn Sie die Alarme aktivieren möchten, befolgen Sie diese Schritte, und wählen Sie *Unterdrückung beenden*.
 
+.Ergebnis
 Converged Systems Advisor benachrichtigt Sie nicht mehr über die Regel für die angegebene Dauer, und die Regel wird nicht mehr im Dashboard angezeigt.
 
 
@@ -122,6 +125,7 @@ image:screenshot_rules_suppress.gif["Zeigt das Warnungssymbol über der Tabelle 
 . Wählen Sie *Ende Unterdrückung* und klicken Sie dann auf *Absenden*.
 
 
+.Ergebnis
 Warnmeldungen sind für die ausgewählte Regel aktiviert und die Regel wird in der Tabelle Regeln und in der Konsole angezeigt.
 
 
@@ -175,6 +179,7 @@ image:screenshot_reports_generate.gif["Zeigt die Optionen zur Erstellung eines B
 
 
 
+.Ergebnis
 Converged Systems Advisor generiert den Bericht.
 
 
@@ -191,6 +196,7 @@ Sie können Details zu Supportverträgen für jedes Gerät in einer Konfiguratio
 . Wiederholen Sie die Schritte für jedes Gerät in der Konfiguration.
 
 
+.Ergebnis
 Converged Systems Advisor zeigt jetzt die Details zu den Supportverträgen für jedes Gerät an. Es wird schnell ersichtlich, welche Geräte über aktive oder abgelaufene Supportverträge verfügen.
 
 image:screenshot_support_contracts.gif["Zeigt vier Supportverträge an: Einer ist abgelaufen und die anderen drei sind aktiv."]

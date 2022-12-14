@@ -17,10 +17,10 @@ summary: Implementieren Sie den Converged Systems Advisor-Agent auf einem VMware
 Sie müssen den Converged Systems Advisor-Agent auf einem VMware ESXi-Server bereitstellen. Der Agent erfasst Konfigurationsdaten zu jedem Gerät in Ihrer konvergenten FlexPod Infrastruktur und sendet diese Daten an das Converged Systems Advisor Portal.
 
 .Schritte
-.  and install the agent
-.  up networking for the agent
-.  an SSL certificate on the agent
-.  the agent to discover your FlexPod infrastructure
+. <<Laden Sie den Agent herunter und installieren Sie ihn>>
+. <<Richten Sie das Netzwerk für den Agenten ein>>
+. <<Installieren Sie ein SSL-Zertifikat auf dem Agenten>>
+. <<Konfigurieren Sie den Agent für die Erkennung Ihrer FlexPod Infrastruktur>>
 
 
 
@@ -29,6 +29,7 @@ Sie müssen den Converged Systems Advisor-Agent auf einem VMware ESXi-Server ber
 
 Sie müssen den Converged Systems Advisor-Agent auf einem VMware ESXi-Server bereitstellen.
 
+.Über diese Aufgabe
 Um die Bandbreitenauslastung zu minimieren, sollten Sie den Agenten auf einem VMware ESXi Server installieren, der sich im selben Rechenzentrum wie die FlexPod-Konfiguration befindet. Der Agent muss über eine Verbindung zu jeder FlexPod-Komponente und dem Internet verfügen, damit er Konfigurationsdaten über HTTPS-Port 443 an das Converged Systems Advisor-Portal senden kann.
 
 Der Agent wird als virtuelle VMware vSphere-Maschine aus einer OVF-Vorlage (Open Virtualization Format) bereitgestellt. Die Vorlage ist Debian-basiert mit 1 vCPU und 2 GB RAM (mehr kann für mehrere oder größere FlexPod-Systeme erforderlich sein).
@@ -117,6 +118,7 @@ Optional: Installieren Sie bei Bedarf ein SSL-Zertifikat auf dem Agent.
 
 Der Agent erstellt ein selbstsigniertes Zertifikat, wenn die virtuelle Maschine zum ersten Mal gestartet wird. Falls erforderlich, können Sie dieses Zertifikat löschen und Ihr eigenes SSL-Zertifikat verwenden.
 
+.Über diese Aufgabe
 Converged Systems Advisor unterstützt folgende: * Alle mit OpenSSL Version 1.0.1 oder höher * TLS 1.1 und TLS 1.2 kompatiblen Chiffren
 
 .Schritte
@@ -154,4 +156,5 @@ Beachten Sie Folgendes: * Benutzername und Passwort sollten für das Konto verwe
 
 
 
+.Ergebnis
 Jedes Gerät in der FlexPod-Infrastruktur sollte in der Tabelle mit einem Häkchen angezeigt werden.image:screenshot_agent_configuration.gif["Zeigt alle erforderlichen Geräte mit einem grünen Häkchen in der Spalte Status an."]

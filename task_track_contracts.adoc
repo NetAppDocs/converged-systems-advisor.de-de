@@ -24,6 +24,7 @@ Sie können Details zu Supportverträgen für jedes Gerät in einer Konfiguratio
 . Wiederholen Sie die Schritte für jedes Gerät in der Konfiguration.
 
 
+.Ergebnis
 Converged Systems Advisor zeigt jetzt die Details zu den Supportverträgen für jedes Gerät an. Es wird schnell ersichtlich, welche Geräte über aktive oder abgelaufene Supportverträge verfügen.
 
 image:screenshot_support_contracts.gif["Zeigt vier Supportverträge an: Einer ist abgelaufen und die anderen drei sind aktiv."]

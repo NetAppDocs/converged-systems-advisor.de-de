@@ -46,6 +46,7 @@ NOTE: Wenn Sie ein Partner oder Reseller sind, können Sie die Schritte zum Hinz
 
 
 
+.Ergebnis
 Converged Systems Advisor erweitert das Portal um die Infrastruktur und beginnt mit dem Erfassen von Konfigurationsdaten zu jedem Gerät. Warten Sie einige Minuten, bis der Agent Informationen von den Geräten erfasst.
 
 
@@ -72,4 +73,5 @@ TIP: Sie können mehrere E-Mail-Adressen in einem Feld eingeben, indem Sie nach 
 . Klicken Sie Auf *Senden*.
 
 
+.Ergebnis
 Der Benutzer sollte eine E-Mail mit Anweisungen für den Zugriff auf Converged Systems Advisor erhalten.

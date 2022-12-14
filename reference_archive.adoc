@@ -24,14 +24,14 @@ Um zu überprüfen, ob die FlexPod-Komponenten vom CSA-Agenten unterstützt werd
 
 Dieses Archiv enthält Informationen aus den folgenden Versionen:
 
-*  April 2020
-*  February 2020
-*  November 2019
-*  July 2019
-*  April 2019
-*  March 2019
-*  January 2019
-*  September 2018
+* <<30. April 2020>>
+* <<3 Februar 2020>>
+* <<7. November 2019>>
+* <<24 Juli 2019>>
+* <<25. April 2019>>
+* <<28 März 2019>>
+* <<17 Januar 2019>>
+* <<13. September 2018>>
 
 
 
@@ -40,10 +40,10 @@ Dieses Archiv enthält Informationen aus den folgenden Versionen:
 
 Diese Version umfasst folgende Verbesserungen:
 
-*  Advisor
-*  interconnect switch
-*  card enhancements
-*  diagram alerts
+* <<Upgrade Advisor>>
+* <<Cluster-Interconnect-Switch>>
+* <<Verbesserungen der Kapazitätskarten>>
+* <<Warnmeldungen im Systemdiagramm>>
 
 
 
@@ -98,7 +98,7 @@ Die folgenden bekannten Probleme wurden in dieser Version behoben:
 
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1253405["1253405"^] | Im Converged Systems Advisor wird möglicherweise der Status des Nexus-Switch-Ports falsch angezeigt. 
 |===
-* Kehren Sie zu zurück 
+* Kehren Sie zu zurück <<Inhalt>>
 
 
 
@@ -107,8 +107,8 @@ Die folgenden bekannten Probleme wurden in dieser Version behoben:
 
 Diese Version umfasst folgende Verbesserungen:
 
-*  enhancements
-*  details
+* <<Verbesserungen an der Navigation>>
+* <<Aggregatdetails>>
 
 
 
@@ -145,7 +145,7 @@ Die folgenden bekannten Probleme wurden in dieser Version behoben:
 
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1279956["1279956"^] | Single Node MetroCluster zeigt das IOXM-Erweiterungsmodul in der Zusammenfassung von Übersicht und Regeln auf der Seite mit den Cluster-Details nicht an. 
 |===
-* Kehren Sie zu zurück 
+* Kehren Sie zu zurück <<Inhalt>>
 
 
 
@@ -157,9 +157,9 @@ NOTE: Alle neuen Funktionen und Verbesserungen in dieser Version werden automati
 
 Diese Version umfasst die folgenden neuen Funktionen und Verbesserungen:
 
-*  awareness
-*  awareness
-*  interoperability functionality
+* <<MetroCluster Awareness>>
+* <<NVMe Awareness>>
+* <<Verbesserte Interoperabilitätsfunktionalität>>
 
 
 
@@ -180,7 +180,7 @@ Converged Systems Advisor führt nun Analysen durch, um die Konfiguration des NV
 
 Converged Systems Advisor verfügt über eine aktualisierte Interoperabilitätskarte, die mit einem Popup-Fenster verknüpft wird, in dem die aktuellen, nächsten und neuesten für jede Komponente unterstützten Versionen angezeigt werden. Ein neuer Bericht wurde in dem Pop-up hinzugefügt, um einen individuellen Interoperabilitätsbericht pro Komponentenebene anzuzeigen.
 
-* Kehren Sie zu zurück 
+* Kehren Sie zu zurück <<Inhalt>>
 
 
 
@@ -189,8 +189,8 @@ Converged Systems Advisor verfügt über eine aktualisierte Interoperabilitätsk
 
 Diese Version umfasst die folgenden neuen Funktionen und Verbesserungen:
 
-*  for Cisco ACI in FlexPod
-*  for multiple clusters in a single FlexPod
+* <<Unterstützung für Cisco ACI in FlexPod>>
+* <<Unterstützung mehrerer Cluster in einer einzelnen FlexPod>>
 
 
 
@@ -205,7 +205,7 @@ Converged Systems Advisor unterstützt jetzt FlexPod Designs mit Cisco ACI Netwo
 
 Converged Systems Advisor unterstützt jetzt mehrere Cluster in einem einzigen FlexPod. Storage ONTAP-Regeln werden auf allen Clustern verarbeitet. Alle Cluster werden im Systemdiagramm dargestellt.
 
-* Kehren Sie zu zurück 
+* Kehren Sie zu zurück <<Inhalt>>
 
 
 
@@ -214,8 +214,8 @@ Converged Systems Advisor unterstützt jetzt mehrere Cluster in einem einzigen F
 
 Diese Version umfasst die folgenden neuen Funktionen und Verbesserungen:
 
-*  resolving failed rules
-*  suppressed rules
+* <<Automatisches Auflösen fehlgeschlagener Regeln>>
+* <<Unterdrückte Regeln werden angezeigt>>
 
 
 
@@ -252,7 +252,7 @@ Die folgenden bekannten Probleme wurden in dieser Version behoben:
 
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1211999["1211999"^] | Der Status der Speicherplatzreservierung wird falsch angezeigt 
 |===
-* Kehren Sie zu zurück 
+* Kehren Sie zu zurück <<Inhalt>>
 
 
 
@@ -277,7 +277,7 @@ Die folgenden bekannten Probleme wurden in dieser Version behoben:
 
 | https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1212001["1212001"] | Informationen zur Stromversorgung eines Rack-Servers werden möglicherweise in CSA falsch angezeigt 
 |===
-* Kehren Sie zu zurück 
+* Kehren Sie zu zurück <<Inhalt>>
 
 
 
@@ -286,11 +286,11 @@ Die folgenden bekannten Probleme wurden in dieser Version behoben:
 
 Diese Version umfasst die folgenden neuen Funktionen und Verbesserungen:
 
-*  for new FlexPod devices
-*  information about hosts and virtual machines
-*  experience when adding an infrastructure
-*  import using a file
-*  with NetApp Active IQ
+* <<Unterstützung für neue FlexPod-Geräte>>
+* <<Detaillierte Informationen zu Hosts und Virtual Machines>>
+* <<Vereinfachte Handhabung durch Hinzufügen einer Infrastruktur>>
+* <<Gerätedatei mit einer Datei importieren>>
+* <<Integration in NetApp Active IQ>>
 
 
 
@@ -361,7 +361,7 @@ Die folgenden bekannten Probleme wurden in dieser Version behoben:
 
 | 2794 | Converged Systems Advisor zeigt „Pass“ für die Regel „VMware Tools Check“ an, obwohl nicht VMware Tools auf der Virtual Machine installiert waren. 
 |===
-* Kehren Sie zu zurück 
+* Kehren Sie zu zurück <<Inhalt>>
 
 
 

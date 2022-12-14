@@ -31,4 +31,5 @@ Täglicher Alarmdigest:: Informiert Sie über fehlgeschlagene Regeln, die am Vor
 . Klicken Sie Auf *Speichern*.
 
 
+.Ergebnis
 Converged Systems Advisor sendet nun E-Mail-Benachrichtigungen an die Benutzer, die mit der konvergenten Infrastruktur verknüpft sind.

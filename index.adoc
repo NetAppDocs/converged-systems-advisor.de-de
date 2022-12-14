@@ -18,7 +18,7 @@ NetApp Converged Systems Advisor validiert, überwacht und optimiert die Impleme
 
 
 
-== Entdecken Sie, was neu ist
+== Entdecken Sie die Neuigkeiten
 
 link:reference_new.html["Welche Neuerungen bietet Converged Systems Advisor"]
 

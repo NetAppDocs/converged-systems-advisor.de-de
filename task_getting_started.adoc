@@ -46,7 +46,7 @@ Um die Bandbreitenauslastung zu minimieren, empfiehlt NetApp, den Agenten im sel
 
 
 
-.  accounts on FlexPod devices,Erstellen von Konten für jede FlexPod Komponente.
+. <<Erstellen von Konten auf FlexPod-Geräten,Erstellen von Konten für jede FlexPod Komponente>>.
 +
 Der Agent benötigt zur Erfassung von Konfigurationsdaten Zugangsdaten. Sie müssen die Anmeldeinformationen angeben, wenn Sie den Agenten konfigurieren.
 
@@ -95,7 +95,7 @@ TIP: Alle neuen Benutzer sind standardmäßig schreibgeschützt.
 
 
 
-Wenn Sie einen TACACS+-Server verwenden und CSA-Benutzerrechte erteilen müssen, gehen Sie zu  CSA user privileges using a TACACS+ server.
+Wenn Sie einen TACACS+-Server verwenden und CSA-Benutzerrechte erteilen müssen, gehen Sie zu <<Gewähren von CSA-Benutzerberechtigungen über einen TACACS+-Server>>.
 
 
 
@@ -159,10 +159,10 @@ Benutzerkennung: *CSARO@vsphere.local* und zuvor erstelltes Passwort.
 Sie müssen den Converged Systems Advisor-Agent auf einem VMware ESXi-Server bereitstellen. Der Agent erfasst Konfigurationsdaten zu jedem Gerät in Ihrer konvergenten FlexPod Infrastruktur und sendet diese Daten an das Converged Systems Advisor Portal.
 
 .Schritte
-.  and installing the agent,Laden Sie den Agent herunter und installieren Sie ihn
-.  up networking for the agent,Richten Sie das Netzwerk für den Agenten ein
-.  an SSL certificate on the agent,Installieren Sie bei Bedarf ein SSL-Zertifikat auf dem Agenten
-.  the agent to discover your FlexPod infrastructure,Konfigurieren Sie den Agent für die Erkennung Ihrer FlexPod Infrastruktur
+. <<Herunterladen und Installieren des Agenten,Laden Sie den Agent herunter und installieren Sie ihn>>
+. <<Einrichten des Netzwerks für den Agenten,Richten Sie das Netzwerk für den Agenten ein>>
+. <<Installieren eines SSL-Zertifikats auf dem Agenten,Installieren Sie bei Bedarf ein SSL-Zertifikat auf dem Agenten>>
+. <<Konfigurieren des Agenten zur Erkennung der FlexPod Infrastruktur,Konfigurieren Sie den Agent für die Erkennung Ihrer FlexPod Infrastruktur>>
 
 
 
@@ -171,6 +171,7 @@ Sie müssen den Converged Systems Advisor-Agent auf einem VMware ESXi-Server ber
 
 Sie müssen den Converged Systems Advisor-Agent auf einem VMware ESXi-Server bereitstellen.
 
+.Über diese Aufgabe
 Um die Bandbreitenauslastung zu minimieren, sollten Sie den Agenten auf einem VMware ESXi Server installieren, der sich im selben Rechenzentrum wie die FlexPod-Konfiguration befindet. Der Agent muss über eine Verbindung zu jeder FlexPod-Komponente und dem Internet verfügen, damit er Konfigurationsdaten über HTTPS-Port 443 an das Converged Systems Advisor-Portal senden kann.
 
 Der Agent wird als virtuelle VMware vSphere-Maschine aus einer OVF-Vorlage (Open Virtualization Format) bereitgestellt. Die Vorlage ist Debian-basiert mit 1 vCPU und 2 GB RAM (mehr kann für mehrere oder größere FlexPod-Systeme erforderlich sein).
@@ -256,6 +257,7 @@ Wenn der Befehl fehlschlägt, überprüfen Sie die DNS-Einstellungen. Die virtue
 
 Der Agent erstellt ein selbstsigniertes Zertifikat, wenn die virtuelle Maschine zum ersten Mal gestartet wird. Falls erforderlich, können Sie dieses Zertifikat löschen und Ihr eigenes SSL-Zertifikat verwenden.
 
+.Über diese Aufgabe
 Converged Systems Advisor unterstützt Folgendes:
 
 * Alle mit OpenSSL-Version 1.0.1 oder höher kompatiblen Chiffren
@@ -298,6 +300,7 @@ Beachten Sie Folgendes:
 
 
 
+.Ergebnis
 Jedes Gerät in der FlexPod-Infrastruktur sollte in der Tabelle mit einem Häkchen angezeigt werden.
 
 image:screenshot_agent_configuration.gif["Zeigt alle erforderlichen Geräte mit einem grünen Häkchen in der Spalte Status an."]
@@ -333,6 +336,7 @@ image:screenshot_add_infrastructure_pikesupdate.gif["Zeigt vier in der Tabelle a
 
 
 
+.Ergebnis
 Converged Systems Advisor erweitert das Portal um die Infrastruktur und beginnt mit dem Erfassen von Konfigurationsdaten zu jedem Gerät. Warten Sie einige Minuten, bis der Agent Informationen von den Geräten erfasst.
 
 
@@ -359,6 +363,7 @@ TIP: Sie können mehrere E-Mail-Adressen in einem Feld eingeben, indem Sie nach 
 . Klicken Sie Auf *Senden*.
 
 
+.Ergebnis
 Der Benutzer sollte eine E-Mail mit Anweisungen für den Zugriff auf Converged Systems Advisor erhalten.
 
 
@@ -396,4 +401,5 @@ Täglicher Alarmdigest:: Informiert Sie über fehlgeschlagene Regeln, die am Vor
 . Klicken Sie Auf *Speichern*.
 
 
+.Ergebnis
 Converged Systems Advisor sendet nun E-Mail-Benachrichtigungen an die Benutzer, die mit der konvergenten Infrastruktur verknüpft sind.

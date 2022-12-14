@@ -31,4 +31,5 @@ image:screenshot_reports_generate.gif["Zeigt die Optionen zur Erstellung eines B
 
 
 
+.Ergebnis
 Converged Systems Advisor generiert den Bericht.

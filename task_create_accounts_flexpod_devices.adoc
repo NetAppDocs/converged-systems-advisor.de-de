@@ -15,12 +15,12 @@ summary: Richten Sie zum Starten Konten für FlexPod-Geräte ein.
 
 Richten Sie zum Einstieg Konten für FlexPod-Geräte ein:
 
-*  a read-only account for Cisco UCS Manager
-*  a read-only account for Nexus switches
-*  an admin account for ONTAP
-*  a read-only account for VMware
-*  a read-only account on the APIC
-*  CSA user privileges using a TACACS+ server
+* <<Erstellen eines schreibgeschützten Kontos für Cisco UCS Manager>>
+* <<Erstellen eines schreibgeschützten Kontos für Nexus Switches>>
+* <<Erstellen eines Administratorkontos für ONTAP>>
+* <<Erstellen Sie ein schreibgeschütztes Konto für VMware>>
+* <<Erstellen Sie ein schreibgeschütztes Konto im APIC>>
+* <<Gewähren Sie CSA-Benutzerberechtigungen über einen TACACS+-Server>>
 
 
 Der Agent verwendet diese Konten, um Konfigurationsinformationen von jedem Gerät zu erfassen.

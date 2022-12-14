@@ -56,4 +56,5 @@ image:screenshot_collect_button.gif["Zeigt die Erfassungs-Schaltfläche oben rec
 . Senden Sie den Abschlussbericht zur Validierung der Implementierung an Ihren Kunden.
 
 
+.Ergebnis
 Die konvergente Infrastruktur wird nun gemäß den Best Practices eingerichtet.

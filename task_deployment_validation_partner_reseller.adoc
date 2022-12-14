@@ -32,6 +32,7 @@ Siehe link:task_add_infrastructure["Infrastruktur zum Portal hinzufügen"] So er
 * Sie haben auch optional eine Shared IT-Infrastruktur mit anderen Benutzern gemeinsam genutzt.
 
 
+.Schritte
 Partner und Reseller verwenden ihre eigenen NetApp Zugangsdaten, um sich beim CSA Portal anzumelden und den Validierungsprozess zu starten.
 
 . Melden Sie sich bei an https://csa.netapp.com/["Converged Systems Advisor-Portal"^] Verwendung Ihrer NetApp Anmeldedaten.

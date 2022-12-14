@@ -24,9 +24,9 @@ Um zu überprüfen, ob die FlexPod-Komponenten vom CSA-Agenten unterstützt werd
 
 Die Version umfasst folgende Verbesserungen:
 
-*  functionality for storage change detection (diffs)
-*  configuration assurance for cluster interconnect switches
-*  coverage of NVMe designs
+* <<Neue Funktionen zur Erkennung von Speicheränderungen (diffs)>>
+* <<Erweiterte Konfigurationssicherung für Cluster-Interconnect-Switches>>
+* <<Erste Abdeckung von NVMe-Designs>>
 
 
 
