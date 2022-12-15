@@ -795,7 +795,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-17 06:40:22 +0000">11/17/2022</time>
+    <time datetime="2022-12-14 17:58:50 +0000">12/14/2022</time>
     
   
 
@@ -867,7 +867,7 @@
 </div>
 </li>
 <li>
-<p>accounts on FlexPod devices,Erstellen von Konten für jede FlexPod Komponente.</p>
+<p><a href="#erstellen-von-konten-auf-flexpod-geräten">Erstellen von Konten für jede FlexPod Komponente</a>.</p>
 <div class="paragraph">
 <p>Der Agent benötigt zur Erfassung von Konfigurationsdaten Zugangsdaten. Sie müssen die Anmeldeinformationen angeben, wenn Sie den Agenten konfigurieren.</p>
 </div>
@@ -948,7 +948,7 @@ Alle neuen Benutzer sind standardmäßig schreibgeschützt.
 </ol>
 </div>
 <div class="paragraph">
-<p>Wenn Sie einen TACACS+-Server verwenden und CSA-Benutzerrechte erteilen müssen, gehen Sie zu  CSA user privileges using a TACACS+ server.</p>
+<p>Wenn Sie einen TACACS+-Server verwenden und CSA-Benutzerrechte erteilen müssen, gehen Sie zu <a href="#gewähren-von-csa-benutzerberechtigungen-über-einen-tacacs-server">Gewähren von CSA-Benutzerberechtigungen über einen TACACS+-Server</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1072,16 +1072,16 @@ Alle neuen Benutzer sind standardmäßig schreibgeschützt.
 <div class="title">Schritte</div>
 <ol class="arabic">
 <li>
-<p>and installing the agent,Laden Sie den Agent herunter und installieren Sie ihn</p>
+<p><a href="#herunterladen-und-installieren-des-agenten">Laden Sie den Agent herunter und installieren Sie ihn</a></p>
 </li>
 <li>
-<p>up networking for the agent,Richten Sie das Netzwerk für den Agenten ein</p>
+<p><a href="#einrichten-des-netzwerks-für-den-agenten">Richten Sie das Netzwerk für den Agenten ein</a></p>
 </li>
 <li>
-<p>an SSL certificate on the agent,Installieren Sie bei Bedarf ein SSL-Zertifikat auf dem Agenten</p>
+<p><a href="#installieren-eines-ssl-zertifikats-auf-dem-agenten">Installieren Sie bei Bedarf ein SSL-Zertifikat auf dem Agenten</a></p>
 </li>
 <li>
-<p>the agent to discover your FlexPod infrastructure,Konfigurieren Sie den Agent für die Erkennung Ihrer FlexPod Infrastruktur</p>
+<p><a href="#konfigurieren-des-agenten-zur-erkennung-der-flexpod-infrastruktur">Konfigurieren Sie den Agent für die Erkennung Ihrer FlexPod Infrastruktur</a></p>
 </li>
 </ol>
 </div>
@@ -1091,6 +1091,7 @@ Alle neuen Benutzer sind standardmäßig schreibgeschützt.
 <p>Sie müssen den Converged Systems Advisor-Agent auf einem VMware ESXi-Server bereitstellen.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Um die Bandbreitenauslastung zu minimieren, sollten Sie den Agenten auf einem VMware ESXi Server installieren, der sich im selben Rechenzentrum wie die FlexPod-Konfiguration befindet. Der Agent muss über eine Verbindung zu jeder FlexPod-Komponente und dem Internet verfügen, damit er Konfigurationsdaten über HTTPS-Port 443 an das Converged Systems Advisor-Portal senden kann.</p>
 </div>
 <div class="paragraph">
@@ -1225,6 +1226,7 @@ Aus Sicherheitsgründen ist SSHD standardmäßig deaktiviert.
 <p>Der Agent erstellt ein selbstsigniertes Zertifikat, wenn die virtuelle Maschine zum ersten Mal gestartet wird. Falls erforderlich, können Sie dieses Zertifikat löschen und Ihr eigenes SSL-Zertifikat verwenden.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Converged Systems Advisor unterstützt Folgendes:</p>
 </div>
 <div class="ulist">
@@ -1304,6 +1306,7 @@ Aus Sicherheitsgründen ist SSHD standardmäßig deaktiviert.
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Ergebnis</div>
 <p>Jedes Gerät in der FlexPod-Infrastruktur sollte in der Tabelle mit einem Häkchen angezeigt werden.</p>
 </div>
 <div class="paragraph">
@@ -1371,6 +1374,7 @@ Wenn Sie ein Gerät auswählen, wird in der Spalte Berechtigung entweder <strong
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Ergebnis</div>
 <p>Converged Systems Advisor erweitert das Portal um die Infrastruktur und beginnt mit dem Erfassen von Konfigurationsdaten zu jedem Gerät. Warten Sie einige Minuten, bis der Agent Informationen von den Geräten erfasst.</p>
 </div>
 </div>
@@ -1420,6 +1424,7 @@ Sie können mehrere E-Mail-Adressen in einem Feld eingeben, indem Sie nach der e
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Ergebnis</div>
 <p>Der Benutzer sollte eine E-Mail mit Anweisungen für den Zugriff auf Converged Systems Advisor erhalten.</p>
 </div>
 </div>
@@ -1489,6 +1494,7 @@ Sie können mehrere E-Mail-Adressen in einem Feld eingeben, indem Sie nach der e
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Ergebnis</div>
 <p>Converged Systems Advisor sendet nun E-Mail-Benachrichtigungen an die Benutzer, die mit der konvergenten Infrastruktur verknüpft sind.</p>
 </div>
 </div>
