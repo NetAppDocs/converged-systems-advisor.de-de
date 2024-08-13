@@ -19,4 +19,4 @@ Converged Systems Advisor validiert die Implementierung Ihrer FlexPod-Infrastruk
 Sehen Sie sich das folgende Video an und verschaffen Sie sich einen Überblick über den Converged Systems Advisor:
 
 video::CZHu0Xp33BY[youtube,width=848,height=480]
-Weitere Informationen über den Mehrwert, den Converged Systems Advisor bietet, https://www.netapp.com/us/media/ds-3896.pdf["Lesen Sie das Datenblatt"^].
+Weitere Informationen über den Nutzen, den Converged Systems Advisor bietet, finden Sie unter https://www.netapp.com/data-storage/flexpod/cooperative-support/["Lesen Sie das Datenblatt"^].

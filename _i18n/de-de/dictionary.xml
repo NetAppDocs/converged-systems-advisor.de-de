@@ -219,10 +219,8 @@
   <block id="70a81ab3570971044c051a122f25ee0b" category="summary">Weitere Informationen zum Converged Systems Advisor erhalten Sie unter verschiedenen Ressourcen.</block>
   <block id="3cd12697cda279c9c99b093a265c1ba8" category="doc">Wo Sie Hilfe und weitere Informationen erhalten</block>
   <block id="ba69e3ff884a3e60e26bcffcb121315d" category="inline-link">Converged Systems Advisor – Datenblatt</block>
-  <block id="5bcf85e8807e9d7961fa86529a7ee3ac" category="list-text"><block ref="5bcf85e8807e9d7961fa86529a7ee3ac" category="inline-link-rx"></block></block>
   <block id="b1b49e994988385600e529f9e03aeded" category="paragraph">Weitere Informationen zum Mehrwert, den Converged Systems Advisor bietet.</block>
   <block id="5768a4e6671c0fb61f9cc9bccc217998" category="inline-link">Technischer Bericht 4036 zu NetApp: Technische Spezifikationen zu FlexPod Datacenter</block>
-  <block id="9569519d894aa3e75942763a12a60c12" category="list-text"><block ref="9569519d894aa3e75942763a12a60c12" category="inline-link-rx"></block></block>
   <block id="d5ae438f326f42644223635842ca89cc" category="paragraph">Lesen Sie die Best Practices und Firmware-Anforderungen, die Converged Systems Advisor Ihre Konfigurationen mit denen vergleicht.</block>
   <block id="b1540a3ec25c7d8277b499a1cc1d920b" category="list-text"><block ref="b1540a3ec25c7d8277b499a1cc1d920b" category="inline-link-rx"></block></block>
   <block id="b9c8769caa39394587c227d447b7343b" category="paragraph">Überprüfen Sie die Unterstützung Ihrer Konfiguration.</block>
@@ -390,7 +388,6 @@
   <block id="4daf49986af67aba8f5e944968d88167" category="doc">Converged Systems Advisor – Übersicht</block>
   <block id="b3072b853bb7e155aaf1f74dc7548418" category="paragraph">Sehen Sie sich das folgende Video an und verschaffen Sie sich einen Überblick über den Converged Systems Advisor:</block>
   <block id="fccce43bca628d5f348a9d60196dd5ac" category="inline-link">Lesen Sie das Datenblatt</block>
-  <block id="c4a6f4e43c995f810acb8c7b73e0d5d1" category="paragraph">Weitere Informationen über den Mehrwert, den Converged Systems Advisor bietet,<block ref="f25cd14a6ee6a3fdd35c3bb14df6ae32" category="inline-link-rx"></block>.</block>
   <block id="1f060636fe5b0a8ed84fb873b522ba92" category="summary">Als NetApp Partner können Sie mit Converged Systems Advisor beginnen, indem Sie mit Ihrem Kunden zusammenarbeiten, um den Agenten zu implementieren und das Portal einzurichten, bevor Sie eine Validierung der Implementierung durchführen.</block>
   <block id="8d10e09bd713073b88005ddecbf5705a" category="doc">Validierungsbericht für Partner der Implementierung</block>
   <block id="62cc019b98cca9e1b65c304991c3dca4" category="paragraph">NetApp Partner können eine Implementierungsvalidierung durchführen, um sicherzustellen, dass die konvergente FlexPod Infrastruktur ordnungsgemäß konfiguriert wurde. Der Partner kann den Bericht dann an Kunden weitergeben.</block>
@@ -790,4 +787,7 @@
   <block id="71bb2e8e85702bc6dc8fe49bc2ca2664" category="inline-image-macro">Nr. 7</block>
   <block id="ec82488760b9c067f6a1effc164db7f9" category="section-title"><block ref="a30b4945ccf5eb8b859e8a3c07b0e494" category="inline-image-macro-rx" type="image"></block> Setzen Sie eine statische IP-Adresse</block>
   <block id="492e5546e60705134bff8d7f80511a8d" category="section-title">Entdecken Sie die Neuigkeiten</block>
+  <block id="671f9fcb308d27b5e6c67487a132689b" category="paragraph">Weitere Informationen über den Nutzen, den Converged Systems Advisor bietet, finden Sie unter<block ref="fc23d3c004c60b82dbfd031bd239bfab" category="inline-link-rx"></block>.</block>
+  <block id="87f06a4b2aacd95154431aea948042fa" category="list-text"><block ref="87f06a4b2aacd95154431aea948042fa" category="inline-link-rx"></block></block>
+  <block id="cf7b58ed3bc4022cb990fe98807b8da5" category="list-text"><block ref="cf7b58ed3bc4022cb990fe98807b8da5" category="inline-link-rx"></block></block>
 </blocks>
